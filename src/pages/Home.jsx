@@ -1,0 +1,50 @@
+import { Container, StackDivider } from "@chakra-ui/react";
+import {
+  ExperienceSection,
+  Header,
+  InfoCard,
+  CountrySection,
+} from "../components/index";
+
+import dataCard from "../constants/constantData/dataCard";
+const Home = () => {
+  return (
+    <>
+      <Header
+        background={{
+          base: "https://www.yomeanimo.com/wp-content/uploads/2022/02/header-berna-final-mobile-4.jpg",
+          md: "https://www.yomeanimo.com/wp-content/uploads/2022/02/YoMeAnimo-home.jpg",
+        }}
+        encabezado="Viví la experiencia de viajar y trabajar por el mundo"
+        parrafo="Armá tu propio viaje de Working Holiday, como ya lo hicieron miles de
+        Yomeanimers!"
+        textButton="Comenzá tu viaje"
+        textColor="primary.darkGranate"
+        route="/comienza-aqui/"
+      />
+      <Container
+        maxWidth={{ base: "full", md: "7xl" }}
+        px={0}
+        centerContent
+        gap={8}
+        marginTop={8}
+      >
+        {" "}
+        <StackDivider />
+        <CountrySection />
+        <StackDivider />
+        <ExperienceSection />
+        <StackDivider />
+        <InfoCard data={dataCard} />
+        {/*    <PromotionCard />
+      <BlogSection />
+      <PrensaSection />
+      <SocialMediaSection />
+      <FormSection />
+      <TermUseSection />*/}
+      </Container>{" "}
+    </>
+  );
+};
+
+export default Home;

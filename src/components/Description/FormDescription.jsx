@@ -23,7 +23,6 @@ const FormDescription = () => {
     if (!result.country && !result.age) {
       return alert("complete options");
     }
-    console.log(sharingDescriptions);
     sharingDescriptions.setSubject(result);
   };
 
@@ -34,9 +33,19 @@ const FormDescription = () => {
       justify="space-between"
       spacing={20}
       bg="teal.200"
+      w="full"
     >
       <Menu>
-        <MenuButton>{selectedCountry}</MenuButton>
+        <MenuButton
+          borderRadius="xl"
+          bg="teal.700"
+          py={4}
+          px={8}
+          minW="200px"
+          color="#fff"
+        >
+          {selectedCountry}
+        </MenuButton>
         <MenuList minW="140px">
           <MenuItem
             value="Australia"

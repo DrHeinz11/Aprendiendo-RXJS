@@ -8,11 +8,11 @@ const DescriptionPage = () => {
     <Stack
       direction="column"
       spacing={10}
-      alignContent="center"
-      bg="#fafafa"
-      width="xl"
-      minHeight="xl"
-      justifyContent="center"
+      alignItems="center"
+      bg="#d8d8d8"
+      w="full"
+      minH="110vh"
+      py={10}
     >
       <FormDescription />
       <ImageDescription />
