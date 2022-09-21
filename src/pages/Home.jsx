@@ -2,11 +2,9 @@ import { Container, StackDivider } from "@chakra-ui/react";
 import {
   ExperienceSection,
   Header,
-  InfoCard,
+  HomeInfoSection,
   CountrySection,
 } from "../components/index";
-
-import dataCard from "../constants/constantData/dataCard";
 const Home = () => {
   return (
     <>
@@ -35,7 +33,7 @@ const Home = () => {
         <StackDivider />
         <ExperienceSection />
         <StackDivider />
-        <InfoCard data={dataCard} />
+        <HomeInfoSection />
         {/*    <PromotionCard />
       <BlogSection />
       <PrensaSection />

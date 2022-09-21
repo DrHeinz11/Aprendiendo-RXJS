@@ -12,6 +12,9 @@ const CustomButton = ({ textButton, signalButton, sizeButton, route }) => {
         borderRadius="xl"
         w="fit-content"
         textTransform="initial"
+        fontSize={{ base: "lg", md: "xl" }}
+        py={6}
+        px={10}
       >
         {textoButton}
       </Button>
