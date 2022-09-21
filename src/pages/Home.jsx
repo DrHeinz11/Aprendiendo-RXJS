@@ -20,13 +20,7 @@ const Home = () => {
         textColor="primary.darkGranate"
         route="/comienza-aqui/"
       />
-      <Container
-        maxWidth={{ base: "full", md: "7xl" }}
-        px={0}
-        centerContent
-        gap={8}
-        marginTop={8}
-      >
+      <Container px={0} centerContent gap={8} marginTop={8}>
         {" "}
         <StackDivider />
         <CountrySection />

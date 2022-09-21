@@ -10,7 +10,7 @@ const HomeInfoSection = () => {
       bgSize="cover"
       backgroundColor={"primary.lightAqua"}
       py={8}
-      px={4}
+      px={{ base: 2, md: 4 }}
       w="full"
     >
       <Stack
@@ -19,19 +19,35 @@ const HomeInfoSection = () => {
         bg="#fafafa"
         borderRadius={"2xl"}
         align="center"
-        gap={5}
         w={{ base: "xs", sm: "md", md: "full" }}
       >
         <Image
           src={dataCard.infoIMG}
           alt={dataCard.infoTitle}
-          boxSize={{ base: "xs", sm: "md" }}
+          w={{ base: "xs", sm: "md" }}
+          h={{ base: "3xs", sm: "xs", md: "md" }}
           borderRadius="2xl"
           objectFit="cover"
         />
-        <Stack spacing={5} p="4" align={{ base: "center", md: "flex-start" }}>
+        <Stack
+          spacing={5}
+          p="4"
+          w={{ base: "full", md: "2xl" }}
+          align={{ base: "center", md: "flex-start" }}
+          textAlign={{ base: "center", md: "start" }}
+        >
+          <Box h="1px" w="100px" position="relative">
+            <Image
+              position={{ base: "absolute", md: "inherit" }}
+              top="-65px"
+              left={{ base: "-5rem", md: 0 }}
+              src="https://www.yomeanimo.com/wp-content/uploads/2021/03/question-marks.svg"
+              w={"100px"}
+              h="100px"
+            />
+          </Box>
           <Heading>{dataCard.infoTitle}</Heading>
-          <Text>{dataCard.infoCopy}</Text>
+          <Text fontSize={{ base: "lg", md: "xl" }}>{dataCard.infoCopy}</Text>
           <CustomButton textButton={"Más detalles"} route={dataCard.infoUrl} />
         </Stack>
       </Stack>

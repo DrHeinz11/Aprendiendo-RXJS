@@ -1,11 +1,13 @@
 .links {
   border-bottom: 2px solid transparent;
-  font-weight: 900;
+  font-weight: 500;
+  color: #43173d;
 }
 .links:hover,
 .links-footer:hover {
   transition: border-bottom 400ms ease;
   border-bottom: 2px solid red;
+  color: #5a0045;
 }
 
 .links:focus,
