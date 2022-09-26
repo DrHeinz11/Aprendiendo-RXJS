@@ -1,12 +1,12 @@
 import "./CustomBox.css";
 import { chakra } from "@chakra-ui/react";
 
-const CustomBox = ({ background, sizes, children }) => {
+const CustomBox = ({ background, sizes, children, align = "center" }) => {
   return (
     <chakra.div
       className="box"
       display="flex"
-      alignItems={"center"}
+      alignItems={align}
       justifyContent="center"
       width="100%"
       height={sizes.height}

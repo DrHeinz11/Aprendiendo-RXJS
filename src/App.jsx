@@ -7,12 +7,13 @@ import {
   Servicio,
   WorkingHoliday,
   Comunidad,
-  Destino,
   Articulos,
 } from "./Pages/index";
+import DestinoSection from "./pages/Destino/DestinoSection";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FooterCopyright from "./components/FooterComponent/FooterCopyright";
 import { dataHeader } from "./constants/dataHeader";
+import { DescriptionPage } from "./components/index";
 function App() {
   return (
     <BrowserRouter>
@@ -27,7 +28,7 @@ function App() {
           <Route path="/comunidad/" element={<Comunidad />} />
           <Route path="/blog/:id" element={<Articulos />} />
           <Route path="/working-holiday/visa" element={<InfoVisaSection />} />
-          <Route path="/destinos/" element={<Destino />} />
+          <Route path="/destinos/" element={<DestinoSection />} />
         </Routes>
         <FooterCopyright />
       </>

@@ -4,20 +4,16 @@ import { Stack } from "@chakra-ui/react";
 import SearchInput from "./SearchInput";
 const SearchBar = () => {
   const [selectedKeyboard, setSelectedKeyboard] = useState("");
-  const [searchBar, setSearchBar] = useState(false);
-  useEffect(() => {
-    console.log(setSelectedKeyboard);
-  }, [setSelectedKeyboard]);
-  const handleSearchBar = () => {
-    setSearchBar((searchBar) => !searchBar);
+  const [toggleSearchBar, setToggleSearchBar] = useState(false);
+
+  const handleToggleSearchBar = () => {
+    setToggleSearchBar((searchBar) => !searchBar);
   };
+
   return (
-    <Stack direction="row" align="center" bg={searchBar && "gray.400"} p={2}>
-      <SearchInput
-        display={searchBar}
-        setSelectedKeyboard={setSelectedKeyboard}
-      />
-      <Search2Icon onClick={handleSearchBar} />
+    <Stack direction="row" align="center" p={2}>
+      <Search2Icon onClick={handleToggleSearchBar} />
+      {toggleSearchBar && <SearchInput />}
     </Stack>
   );
 };

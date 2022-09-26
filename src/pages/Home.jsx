@@ -1,4 +1,4 @@
-import { Container, StackDivider } from "@chakra-ui/react";
+import { Stack, StackDivider } from "@chakra-ui/react";
 import {
   ExperienceSection,
   Header,
@@ -20,8 +20,7 @@ const Home = () => {
         textColor="primary.darkGranate"
         route="/comienza-aqui/"
       />
-      <Container px={0} centerContent gap={8} marginTop={8}>
-        {" "}
+      <Stack px={0} centerContent gap={8} marginTop={8}>
         <StackDivider />
         <CountrySection />
         <StackDivider />
@@ -34,7 +33,7 @@ const Home = () => {
       <SocialMediaSection />
       <FormSection />
       <TermUseSection />*/}
-      </Container>{" "}
+      </Stack>
     </>
   );
 };

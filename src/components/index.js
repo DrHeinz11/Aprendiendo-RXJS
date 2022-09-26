@@ -6,3 +6,4 @@ export { default as CustomButton } from "../components/custom/CustomButton";
 export { default as CustomBox } from "../components/custom/CustomBox";
 export { default as CountrySection } from "../components/CountrySection/CountrySection";
 export { default as HomeInfoSection } from "./HomeInfoSection";
+export { default as DescriptionPage } from "../components/Description/DescriptionPage";

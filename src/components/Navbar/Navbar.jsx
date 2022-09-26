@@ -10,8 +10,8 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
       gap={4}
       wrap={"nowrap"}
       align="center"
-      justify="space-between"
-      px={2}
+      justify="center"
+      px={6}
       py={3}
     >
       <Link to="/">

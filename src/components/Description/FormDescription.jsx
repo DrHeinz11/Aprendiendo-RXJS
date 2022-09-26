@@ -7,7 +7,7 @@ import {
   MenuList,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import { sharingDescriptions } from "../services/sharing-description.service";
+import { sharingDescriptions } from "../../services/sharing-description.service";
 const FormDescription = () => {
   const [selectedCountry, setSelectedCountry] = useState("Select your country");
   const [selectedAge, setSelectedAge] = useState("Select your age");
@@ -23,6 +23,7 @@ const FormDescription = () => {
     if (!result.country && !result.age) {
       return alert("complete options");
     }
+    console.log(result);
     sharingDescriptions.setSubject(result);
   };
 
