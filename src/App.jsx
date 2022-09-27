@@ -7,7 +7,7 @@ import {
   WorkingHoliday,
   Comunidad,
   Articulos,
-} from "./Pages/index";
+} from "./Pages/indexPages";
 import Home from "./Pages/Home";
 import DestinoSection from "./pages/Destino/DestinoSection";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
