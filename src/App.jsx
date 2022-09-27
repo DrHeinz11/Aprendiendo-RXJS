@@ -1,7 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
-import Home from "./Pages/Home";
 import {
+  Home,
   InfoVisaSection,
   ComienzaAqui,
   Servicio,
@@ -13,7 +13,6 @@ import DestinoSection from "./pages/Destino/DestinoSection";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FooterCopyright from "./components/FooterComponent/FooterCopyright";
 import { dataHeader } from "./constants/dataHeader";
-import { DescriptionPage } from "./components/index";
 function App() {
   return (
     <BrowserRouter>

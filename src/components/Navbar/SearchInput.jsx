@@ -50,6 +50,7 @@ const SearchInput = ({ setToggleSearchBar }) => {
           bg="#fff"
           w="full"
           h="150"
+          px="2"
           onSubmit={(evt) => handleSubmit(evt)}
           zIndex="1000"
         >
@@ -58,17 +59,18 @@ const SearchInput = ({ setToggleSearchBar }) => {
             align="center"
             px={4}
             py={2}
-            w="xl"
+            gap={2}
+            w={{ base: "xs", sm: "md", md: "lg" }}
+            maxW="full"
             border="1px solid black"
             borderRadius="full"
             justify="space-between"
           >
             <chakra.input
               type="text"
-              h="full"
-              w="full"
               px={1}
               color="#000"
+              w="full"
               placeholder="Search..."
               value={keywoard}
               onChange={(evt) => setKeyboard(evt.target.value)}
