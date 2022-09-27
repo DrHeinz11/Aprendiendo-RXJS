@@ -1,5 +1,5 @@
 import { Stack, Image, Heading, Text, Box } from "@chakra-ui/react";
-import CustomButton from "./custom/CustomButton";
+import { CustomButtomRoute } from "./index";
 const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
   return (
     <Box
@@ -60,7 +60,10 @@ const InfoCard = ({ data: { infoIMG, infoUrl, infoTitle, infoCopy } }) => {
           >
             {infoCopy}
           </Text>
-          <CustomButton route="/working-holiday/:id" textButton={"Leer más"} />
+          <CustomButtomRoute
+            route="/working-holiday/:id"
+            textButton={"Leer más"}
+          />
         </Box>
       </Stack>
     </Box>

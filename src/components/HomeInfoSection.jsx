@@ -1,5 +1,5 @@
 import { Stack, Heading, Text, Box, Image } from "@chakra-ui/react";
-import { CustomButton } from "./index";
+import { CustomButtomRoute } from "./index";
 import dataCard from "../constants/constantData/dataCard";
 
 const HomeInfoSection = () => {
@@ -49,7 +49,10 @@ const HomeInfoSection = () => {
           </Box>
           <Heading>{dataCard.infoTitle}</Heading>
           <Text fontSize={{ base: "lg", md: "xl" }}>{dataCard.infoCopy}</Text>
-          <CustomButton textButton={"Más detalles"} route={dataCard.infoUrl} />
+          <CustomButtomRoute
+            textButton={"Más detalles"}
+            route={dataCard.infoUrl}
+          />
         </Stack>
       </Stack>
     </Box>

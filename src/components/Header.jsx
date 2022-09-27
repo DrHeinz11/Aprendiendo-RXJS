@@ -1,4 +1,4 @@
-import CustomButton from "./custom/CustomButton";
+import { CustomButtomRoute } from "./index";
 import { Stack, Text, Heading } from "@chakra-ui/react";
 import CustomBox from "../components/custom/CustomBox";
 import { Link } from "react-router-dom";
@@ -41,7 +41,7 @@ const Header = ({
         >
           {parrafo}
         </Text>
-        <CustomButton
+        <CustomButtomRoute
           route={route}
           alignSelf="center"
           textButton={textButton}

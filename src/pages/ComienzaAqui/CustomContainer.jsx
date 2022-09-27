@@ -1,6 +1,6 @@
 import { Heading, Stack, Image, Text, chakra } from "@chakra-ui/react";
 import React from "react";
-import CustomButton from "../../components/custom/CustomButton";
+import { CustomButtomRoute } from "../../components/index";
 
 const CustomContainer = ({
   illustrationUrl,
@@ -43,7 +43,7 @@ const CustomContainer = ({
         </Heading>
         <Text fontSize={{ base: "md", md: "xl" }}>{paragraph}</Text>
         {textButton && (
-          <CustomButton
+          <CustomButtomRoute
             textButton={textButton}
             signalButton={signal}
             sizeButton={{ base: "md", md: "lg" }}

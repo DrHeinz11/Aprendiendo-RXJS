@@ -1,4 +1,4 @@
-import { CustomButton } from "..//index";
+import { CustomButtomRoute } from "..//index";
 import arrObj from "../../constants/constantData/dataCardCountry";
 import { Link } from "react-router-dom";
 import { Stack, Box, Heading } from "@chakra-ui/react";
@@ -36,7 +36,7 @@ const CountryContainer = () => {
         ))}
       </Box>
 
-      <CustomButton
+      <CustomButtomRoute
         route="/working-holiday/visa"
         textButton="Ver más destinos"
       />

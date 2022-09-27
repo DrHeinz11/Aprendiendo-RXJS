@@ -1,7 +1,7 @@
 import { Button } from "@chakra-ui/react";
 import useTransform from "../../utils/useTransform";
 import { Link } from "react-router-dom";
-const CustomButton = ({ textButton, signalButton, sizeButton, route }) => {
+const CustomButtomRoute = ({ textButton, signalButton, sizeButton, route }) => {
   const textoButton = useTransform(textButton, signalButton);
   return (
     <Link to={route}>
@@ -22,4 +22,4 @@ const CustomButton = ({ textButton, signalButton, sizeButton, route }) => {
   );
 };
 
-export default CustomButton;
+export default CustomButtomRoute;

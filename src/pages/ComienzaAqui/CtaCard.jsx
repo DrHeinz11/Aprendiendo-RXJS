@@ -1,6 +1,6 @@
 import { Grid, Heading, Box } from "@chakra-ui/react";
 import React from "react";
-import CustomButton from "../../components/custom/CustomButton";
+import { CustomButtomRoute } from "../../components/index";
 
 const CtaCard = ({
   heading,
@@ -42,7 +42,7 @@ const CtaCard = ({
       >
         <Heading color="#000">{heading}</Heading>
         <Heading color="#000">{subHeading}</Heading>
-        <CustomButton
+        <CustomButtomRoute
           textButton={textButton}
           sizeButton={sizeButton}
           signalButton={true}

@@ -1,5 +1,5 @@
 import { Grid, Text, Heading, Stack } from "@chakra-ui/react";
-import CustomButton from "../custom/CustomButton";
+import { CustomButtomRoute } from "../index";
 import ExperienceCard from "../../components/ExperienceSection/ExperienceCard";
 import { experienceWK } from "../../constants/constantData/experienceWK";
 const ExperienceSection = () => {
@@ -12,7 +12,7 @@ const ExperienceSection = () => {
           <ExperienceCard key={element.key} props={element} />
         ))}
       </Stack>
-      <CustomButton
+      <CustomButtomRoute
         textButton="empezá ahora"
         signalButton={true}
         route="/comienza-aqui/"

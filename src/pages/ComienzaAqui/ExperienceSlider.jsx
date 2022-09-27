@@ -1,7 +1,7 @@
 import React from "react";
 import { Stack, Box, Heading } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
-import CustomButton from "../../components/custom/CustomButton";
+import { CustomButtomRoute } from "../../components/index";
 import CountryCard from "../../components/CountryCard";
 import dataCardCountry from "../../constants/constantData/dataCardCountry";
 
@@ -31,7 +31,7 @@ const ExperienceSlider = () => {
           </Link>
         ))}
       </Box>
-      <CustomButton
+      <CustomButtomRoute
         textButton="ver más artículos"
         sizeButton="lg"
         route="/comunidad/"

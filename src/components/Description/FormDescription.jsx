@@ -9,7 +9,7 @@ import {
 } from "@chakra-ui/react";
 import { useState } from "react";
 import { sharingDescriptions } from "../../services/sharing-description.service";
-import CustomButtonOnly from "../../components/custom/CustomButonOnly";
+import CustomButtomRouteOnly from "../../components/custom/CustomButonOnly";
 
 const FormDescription = () => {
   const [selectedCountry, setSelectedCountry] = useState("Select your country");
@@ -150,7 +150,7 @@ const FormDescription = () => {
         margin="0 !important"
         onClick={() => handleSelectedInfo(selectedCountry, selectedAge)}
       >
-        <CustomButtonOnly>Consultar</CustomButtonOnly>
+        <CustomButtomRouteOnly>Consultar</CustomButtomRouteOnly>
       </Box>
     </Stack>
   );

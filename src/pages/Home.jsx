@@ -20,7 +20,7 @@ const Home = () => {
         textColor="primary.darkGranate"
         route="/comienza-aqui/"
       />
-      <Stack px={0} centerContent gap={8} marginTop={8}>
+      <Stack px={0} gap={8} marginTop={8}>
         <StackDivider />
         <CountrySection />
         <StackDivider />
