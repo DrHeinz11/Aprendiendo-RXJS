@@ -17,7 +17,7 @@ const FormDescription = () => {
   const handleSelectedInfo = (country, age) => {
     const result = {
       country: country !== "Select your country" && country,
-      age: age !== "Select your age" && age,
+      age: age !== "Select your age" && age.split(","),
     };
 
     if (!result.country && !result.age) {
@@ -34,7 +34,7 @@ const FormDescription = () => {
       justify={{ base: "center", md: "space-between" }}
       alignItems="center"
       wrap={"wrap"}
-      gap={{ base: 4, md: 20 }}
+      gap={{ base: 4, md: 10, lg: 20 }}
       bg="teal.200"
       borderRadius="md"
       w="full"
@@ -50,7 +50,7 @@ const FormDescription = () => {
         >
           {selectedCountry}
         </MenuButton>
-        <MenuList minW="140px">
+        <MenuList maxH="175px" borderWidth="0" overflowY="scroll" minW="140px">
           <MenuItem
             value="Australia"
             onClick={(ev) => handleEventValue(ev, setSelectedCountry)}
@@ -58,7 +58,7 @@ const FormDescription = () => {
             Australia
           </MenuItem>
           <MenuItem
-            value="NewZealand"
+            value="New Zealand"
             onClick={(ev) => handleEventValue(ev, setSelectedCountry)}
           >
             New Zealand
@@ -89,7 +89,7 @@ const FormDescription = () => {
           </MenuItem>
         </MenuList>
       </Menu>
-      <Menu minW="140px">
+      <Menu maxH="100px" overflow="scroll" minW="140px">
         <MenuButton
           margin="0 !important"
           py={4}
@@ -103,19 +103,19 @@ const FormDescription = () => {
         </MenuButton>
         <MenuList>
           <MenuItem
-            value="18-28"
+            value="18,28"
             onClick={(ev) => handleEventValue(ev, setSelectedAge)}
           >
             18-28
           </MenuItem>
           <MenuItem
-            value=" 28-33"
+            value="28,33"
             onClick={(ev) => handleEventValue(ev, setSelectedAge)}
           >
             28-33
           </MenuItem>
           <MenuItem
-            value="33-99"
+            value="33,99"
             onClick={(ev) => handleEventValue(ev, setSelectedAge)}
           >
             33-99

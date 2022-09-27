@@ -16,7 +16,7 @@ const Header = ({
       <CustomBox
         background={background}
         sizes={{ height: { base: "55vh", md: "90vh", lg: "85vh" } }}
-      ></CustomBox>
+      />
       <Stack
         width={{ base: "full", md: "50%", lg: "34rem" }}
         left={{ base: "0", sm: 10 }}
@@ -29,7 +29,7 @@ const Header = ({
         <Heading
           lineHeight="1.15"
           fontSize={{ base: "2xl", md: "4xl" }}
-          color={textColor}
+          color={{ base: "primary.darkGranate", md: textColor }}
         >
           {encabezado}
         </Heading>
@@ -37,7 +37,7 @@ const Header = ({
           fontStyle={"italic"}
           fontSize={{ base: "lg", md: "lg", lg: "xl" }}
           fontWeight="500"
-          color={textColor}
+          color={{ base: "#515151", md: textColor }}
         >
           {parrafo}
         </Text>
