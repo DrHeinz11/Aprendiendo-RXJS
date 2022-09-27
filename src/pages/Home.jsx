@@ -1,10 +1,12 @@
 import { Stack, StackDivider } from "@chakra-ui/react";
+
 import {
   ExperienceSection,
   Header,
   HomeInfoSection,
   CountrySection,
 } from "../components/index";
+
 const Home = () => {
   return (
     <>

@@ -1,7 +1,6 @@
 import "./App.css";
 import Navbar from "./components/Navbar/Navbar";
 import {
-  Home,
   InfoVisaSection,
   ComienzaAqui,
   Servicio,
@@ -9,6 +8,7 @@ import {
   Comunidad,
   Articulos,
 } from "./Pages/index";
+import Home from "./Pages/Home";
 import DestinoSection from "./pages/Destino/DestinoSection";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import FooterCopyright from "./components/FooterComponent/FooterCopyright";
