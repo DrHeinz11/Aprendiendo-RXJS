@@ -30,6 +30,7 @@ const DestinoSection = () => {
         gap="5"
         width="100%"
         paddingY={10}
+        px="2"
       >
         <ImageDescription dataArray={dataCardCountry} />
       </Stack>

@@ -31,14 +31,17 @@ const FormDescription = () => {
     <Stack
       p={10}
       direction="row"
-      justify="space-between"
-      spacing={20}
+      justify={{ base: "center", md: "space-between" }}
+      alignItems="center"
+      wrap={"wrap"}
+      gap={{ base: 4, md: 20 }}
       bg="teal.200"
+      borderRadius="md"
       w="full"
     >
       <Menu>
         <MenuButton
-          borderRadius="xl"
+          borderRadius="md"
           bg="teal.700"
           py={4}
           px={8}
@@ -87,7 +90,17 @@ const FormDescription = () => {
         </MenuList>
       </Menu>
       <Menu minW="140px">
-        <MenuButton>{selectedAge}</MenuButton>
+        <MenuButton
+          margin="0 !important"
+          py={4}
+          px={8}
+          color="#fff"
+          borderRadius="md"
+          bg="teal.500"
+          minW="200px"
+        >
+          {selectedAge}
+        </MenuButton>
         <MenuList>
           <MenuItem
             value="18-28"
@@ -109,7 +122,6 @@ const FormDescription = () => {
           </MenuItem>
         </MenuList>
         <Button
-          colorScheme={"teal"}
           onClick={() => handleSelectedInfo(selectedCountry, selectedAge)}
         >
           Enviar
