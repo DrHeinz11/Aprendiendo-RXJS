@@ -1,6 +1,7 @@
-import { Stack, Image } from "@chakra-ui/react";
+import { Stack, Image, Box } from "@chakra-ui/react";
 import { Link } from "react-router-dom";
 import data from "../../constants/constantData/dataCardCountry";
+import HamburgerMenu from "./HamburgerMenu";
 import SearchBar from "./SearchBar";
 
 const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
@@ -10,7 +11,7 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
       gap={4}
       wrap={"nowrap"}
       align="center"
-      justify="center"
+      justify={{ base: "space-between", md: "center" }}
       px={6}
       py={3}
     >
@@ -51,6 +52,9 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
         </Link>
       </Stack>
       <SearchBar />
+      <Box display={{ base: "block", md: "none" }}>
+        <HamburgerMenu />
+      </Box>
     </Stack>
   );
 };
