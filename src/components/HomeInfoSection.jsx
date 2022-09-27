@@ -20,6 +20,7 @@ const HomeInfoSection = () => {
         borderRadius={"2xl"}
         align="center"
         w={{ base: "xs", sm: "md", md: "container.xl" }}
+        maxWidth="full"
       >
         <Image
           src={dataCard.infoIMG}

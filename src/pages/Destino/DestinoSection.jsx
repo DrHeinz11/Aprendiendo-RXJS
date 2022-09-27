@@ -12,9 +12,9 @@ const DestinoSection = () => {
   return (
     <Box bg="#E2E8F0">
       <CustomBox
-        align="flex-start"
+        align={"flex-start"}
         background={bg}
-        sizes={{ height: { base: "120vh", md: "110vh", lg: "100vh" } }}
+        sizes={{ height: { base: "120vh", md: "110vh", lg: "90vh" } }}
       >
         <Stack alignItems={"center"}>
           <Heading
