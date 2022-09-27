@@ -7,11 +7,10 @@ import {
   Heading,
   Box,
 } from "@chakra-ui/react";
-
-import handleScrollDown from "../../utils/handleScrollDown";
 import { useState } from "react";
 import { sharingDescriptions } from "../../services/sharing-description.service";
 import CustomButtonOnly from "../../components/custom/CustomButonOnly";
+
 const FormDescription = () => {
   const [selectedCountry, setSelectedCountry] = useState("Select your country");
   const [selectedAge, setSelectedAge] = useState("Select your age");

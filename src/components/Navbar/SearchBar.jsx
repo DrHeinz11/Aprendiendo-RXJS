@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
+import { sharingSearchInfo } from "../../services/sharing-searchInfo.service";
 import { Search2Icon } from "@chakra-ui/icons";
 import { Stack } from "@chakra-ui/react";
 import SearchInput from "./SearchInput";
 const SearchBar = () => {
   const [selectedKeyboard, setSelectedKeyboard] = useState("");
   const [toggleSearchBar, setToggleSearchBar] = useState(false);
-
+  const searchBarSubscription$ = sharingSearchInfo.getSearchSubject();
+  useEffect(() => {
+    searchBarSubscription$.subscribe((data) => setSelectedKeyboard(data));
+  }, []);
   const handleToggleSearchBar = () => {
     setToggleSearchBar((searchBar) => !searchBar);
   };
@@ -13,7 +17,9 @@ const SearchBar = () => {
   return (
     <Stack direction="row" align="center" p={2}>
       <Search2Icon onClick={handleToggleSearchBar} />
-      {toggleSearchBar && <SearchInput />}
+      {toggleSearchBar && (
+        <SearchInput setToggleSearchBar={setToggleSearchBar} />
+      )}
     </Stack>
   );
 };
