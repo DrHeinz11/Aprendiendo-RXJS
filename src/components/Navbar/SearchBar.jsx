@@ -6,10 +6,12 @@ import SearchInput from "./SearchInput";
 const SearchBar = () => {
   const [selectedKeyboard, setSelectedKeyboard] = useState("");
   const [toggleSearchBar, setToggleSearchBar] = useState(false);
+
   const searchBarSubscription$ = sharingSearchInfo.getSearchSubject();
   useEffect(() => {
     searchBarSubscription$.subscribe((data) => setSelectedKeyboard(data));
   }, []);
+
   const handleToggleSearchBar = () => {
     setToggleSearchBar((searchBar) => !searchBar);
   };

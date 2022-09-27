@@ -25,7 +25,7 @@ const SearchInput = ({ setToggleSearchBar }) => {
         maxW="full"
         w="full"
         h="100vh"
-        zIndex="base"
+        zIndex="100"
         position="fixed"
         top="0"
         left="0"
