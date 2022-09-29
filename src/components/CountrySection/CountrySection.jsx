@@ -1,6 +1,7 @@
 import { CustomButtomRoute } from "..//index";
 import arrObj from "../../constants/constantData/dataCardCountry";
 import { Link } from "react-router-dom";
+import handleScrollToTop from '../../utils/handleScrollToTop'
 import { Stack, Box, Heading } from "@chakra-ui/react";
 import CountryCard from "../CountryCard";
 
@@ -25,7 +26,7 @@ const CountryContainer = () => {
       </Heading>
       <Box p={4} gap={4} width="100%" overflowX={"scroll"} display="flex">
         {arrSliced.map((element) => (
-          <Link to={`/country/${element.title}/`} key={element.id}>
+          <Link to={`/country/${element.title}/`} onClick={handleScrollToTop} key={element.id}>
             <CountryCard
               title={element.title}
               url={element.url}

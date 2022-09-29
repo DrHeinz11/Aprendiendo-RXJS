@@ -19,7 +19,7 @@ const HomeInfoSection = () => {
         bg="#fafafa"
         borderRadius={"2xl"}
         align="center"
-        w={{ base: "xs", sm: "md", md: "container.xl" }}
+        w={{ base: "xs", sm: "md", md: "container.lg" }}
         maxWidth="full"
       >
         <Image
