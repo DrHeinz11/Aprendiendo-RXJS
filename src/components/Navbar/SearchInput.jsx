@@ -11,7 +11,7 @@ const SearchInput = ({ setToggleSearchBar }) => {
     sharingSearchInfo.setSearchSubject(keywoard);
     setTimeout(() => {
       setToggleSearchBar((prev) => !prev);
-    }, 300);
+    }, 250);
   };
 
   const handleSubmit = (evt) => {
@@ -71,7 +71,10 @@ const SearchInput = ({ setToggleSearchBar }) => {
               px={1}
               color="#000"
               w="full"
+              h='full'
               placeholder="Search..."
+              _placeholder={{ opacity: 0.5 }}
+              _focusVisible={{ outline: 0 }}
               value={keywoard}
               onChange={(evt) => setKeyboard(evt.target.value)}
             />

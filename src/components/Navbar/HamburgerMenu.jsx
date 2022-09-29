@@ -1,5 +1,6 @@
 import { CloseIcon, HamburgerIcon } from "@chakra-ui/icons";
 import { useState } from "react";
+import MenuInterface from "./MenuInterface";
 
 const HamburgerMenu = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
@@ -9,7 +10,7 @@ const HamburgerMenu = () => {
   return (
     <>
       <HamburgerIcon boxSize="28px" onClick={handleToggleMenu} />
-      {toggleMenu && <CloseIcon boxSize="20px" onClick={handleToggleMenu} />}
+      {toggleMenu && <MenuInterface setToggleMenu={setToggleMenu} />}
     </>
   );
 };
