@@ -15,7 +15,7 @@ const ImageDescription = ({ dataArray }) => {
       );
       setData.length &&
         setTimeout(() => {
-          handleScrollDown();
+          handleScrollDown(640);
         }, 300);
       return setDataResponse(setData);
     });

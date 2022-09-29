@@ -1,4 +1,4 @@
-const handleScrollDown = () =>
-  window.scrollTo({ top: 650, behavior: "smooth" });
+const handleScrollDown = (coordinate) =>
+  window.scrollTo({ top: coordinate, behavior: "smooth" });
 
 export default handleScrollDown;

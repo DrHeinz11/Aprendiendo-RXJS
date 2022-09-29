@@ -14,15 +14,11 @@ const DestinoSection = () => {
       <CustomBox
         align={"flex-start"}
         background={bg}
-        sizes={{ height: { base: "120vh", md: "110vh", lg: "90vh" } }}
+        sizes={{ height: { base: "155vh", md: "125vh", lg: "90vh" } }}
       >
         <Stack alignItems={"center"}>
-          <Box mb={4}>
-            <Heading
-              textAlign="center"
-              fontSize={{ base: "4xl", md: "5xl" }}
-              color="#fff"
-            >
+          <Box textAlign="center" mb={4}>
+            <Heading fontSize={{ base: "4xl", md: "5xl" }} color="#fff">
               Viajá y Trabajá por el mundo!
             </Heading>
             <Text mt="2" color="#fafafa" fontSize={{ base: "md", md: "xl" }}>
