@@ -1,4 +1,4 @@
-import { Box, Heading, Stack } from "@chakra-ui/react";
+import { Box, Heading, Text, Stack } from "@chakra-ui/react";
 import dataCardCountry from "../../constants/constantData/dataCardCountry";
 import { CustomBox } from "../../components/index";
 import FormDescription from "../../components/Description/FormDescription";
@@ -17,14 +17,19 @@ const DestinoSection = () => {
         sizes={{ height: { base: "120vh", md: "110vh", lg: "90vh" } }}
       >
         <Stack alignItems={"center"}>
-          <Heading
-            textAlign="center"
-            fontSize={{ base: "4xl", md: "5xl" }}
-            color="#fff"
-            mb={8}
-          >
-            Viajá y Trabajá por el mundo!
-          </Heading>
+          <Box mb={4}>
+            <Heading
+              textAlign="center"
+              fontSize={{ base: "4xl", md: "5xl" }}
+              color="#fff"
+            >
+              Viajá y Trabajá por el mundo!
+            </Heading>
+            <Text mt="2" color="#fafafa" fontSize={{ base: "md", md: "xl" }}>
+              Selecioná tu nacionalidad y edad para consultar la disponibilidad
+              de oportunidades para ti.
+            </Text>
+          </Box>
           <FormDescription />
         </Stack>
       </CustomBox>
