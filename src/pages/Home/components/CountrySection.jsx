@@ -1,12 +1,12 @@
-import { CustomButtomRoute } from "..//index";
-import arrObj from "../../constants/constantData/dataCardCountry";
+import { dataCardCountry } from "../../../constants";
 import { Link } from "react-router-dom";
-import handleScrollToTop from '../../utils/handleScrollToTop'
+import { handleScrollToTop } from "../../../utils";
 import { Stack, Box, Heading } from "@chakra-ui/react";
-import CountryCard from "../CountryCard";
+import { CustomButtomRoute } from "../../../components/index";
+import CountryCard from "../../../components/CountryCard";
 
-const CountryContainer = () => {
-  const arrSliced = arrObj.slice(0, 8);
+const CountrySection = () => {
+  const arrSliced = dataCardCountry.slice(0, 8);
   return (
     <Stack
       direction="column"
@@ -26,7 +26,11 @@ const CountryContainer = () => {
       </Heading>
       <Box p={4} gap={4} width="100%" overflowX={"scroll"} display="flex">
         {arrSliced.map((element) => (
-          <Link to={`/country/${element.title}/`} onClick={handleScrollToTop} key={element.id}>
+          <Link
+            to={`/country/${element.title}/`}
+            onClick={handleScrollToTop}
+            key={element.id}
+          >
             <CountryCard
               title={element.title}
               url={element.url}
@@ -45,4 +49,4 @@ const CountryContainer = () => {
   );
 };
 
-export default CountryContainer;
+export default CountrySection;

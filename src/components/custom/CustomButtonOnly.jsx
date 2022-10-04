@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "@chakra-ui/react";
 
-const CustomButonOnly = ({ children }) => {
+const CustomButtonOnly = ({ children }) => {
   return (
     <Button
       colorScheme={"red"}
@@ -19,4 +19,4 @@ const CustomButonOnly = ({ children }) => {
   );
 };
 
-export default CustomButonOnly;
+export default CustomButtonOnly;

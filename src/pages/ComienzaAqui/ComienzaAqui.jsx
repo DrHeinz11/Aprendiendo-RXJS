@@ -1,11 +1,13 @@
-import React from "react";
-import Header from "../../components/Header";
-import InstructionArticle from "./InstructionArticle";
-import ExperienceSlider from "./ExperienceSlider";
-import MediaContainer from "./MediaContianer";
-import CtaCard from "./CtaCard";
+import { Header } from "../../components";
+
 import Footer from "../../components/FooterComponent/Footer";
 import { Divider } from "@chakra-ui/react";
+import {
+  InstructionArticle,
+  CtaCard,
+  MediaContainer,
+  ExperienceSlider,
+} from "./components/";
 
 const ComienzaAqui = () => {
   const bg = {

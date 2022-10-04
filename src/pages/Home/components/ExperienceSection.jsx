@@ -1,7 +1,7 @@
 import { Grid, Text, Heading, Stack } from "@chakra-ui/react";
-import { CustomButtomRoute } from "../index";
-import ExperienceCard from "../../components/ExperienceSection/ExperienceCard";
-import { experienceWK } from "../../constants/constantData/experienceWK";
+import { CustomButtomRoute } from "../../../components/index";
+import { experienceWK } from "../../../constants/";
+import ExperienceCard from "./ExperienceCard";
 const ExperienceSection = () => {
   return (
     <Grid textAlign="center" justifyItems="center">

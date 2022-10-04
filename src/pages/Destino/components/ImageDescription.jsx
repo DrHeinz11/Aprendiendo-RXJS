@@ -1,7 +1,7 @@
 import { Box, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import handleScrollDown from "../../utils/handleScrollDown";
-import { sharingDescriptions } from "../../services/sharing-description.service";
+import { sharingDescriptions } from "../../../services";
+import { handleScrollDown } from "../../../utils";
 
 const ImageDescription = ({ dataArray }) => {
   const [dataResponse, setDataResponse] = useState([]);

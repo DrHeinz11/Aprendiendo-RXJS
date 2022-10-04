@@ -1,6 +1,6 @@
 import { Grid, Heading, Box } from "@chakra-ui/react";
 import React from "react";
-import { CustomButtomRoute } from "../../components/index";
+import { CustomButtomRoute } from "../../../components/index";
 
 const CtaCard = ({
   heading,

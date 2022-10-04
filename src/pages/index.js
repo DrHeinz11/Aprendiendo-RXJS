@@ -1,0 +1,11 @@
+export { default as Articulos } from './Articulos/Articulos';
+export { default as ComienzaAqui } from './ComienzaAqui/ComienzaAqui';
+export * from './ComienzaAqui/components';
+export { default as Comunidad } from './Comunidad/Comunidad';
+export { default as DestinoSection } from './Destino/DestinoSection';
+export * from './Destino/components';
+export { default as Home } from './Home/Home';
+export * from './Home/components';
+export { default as Servicio } from './Servicio/Servicio';
+export { default as InfoVisaSection } from './WorkingHoliday/InfoVisaSection';
+export { default as WorkingHoliday } from './WorkingHoliday/WorkingHoliday';

@@ -1,11 +1,12 @@
-import Home from "../pages/Home";
-import InfoVisaSection from "../pages/WorkingHoliday/InfoVisaSection";
-import ComienzaAqui from "../pages/ComienzaAqui/ComienzaAqui";
-import Servicio from "../pages/Servicio/Servicio";
-import WorkingHoliday from "../pages/WorkingHoliday/WorkingHoliday";
-import Comunidad from "../pages/Comunidad/Comunidad";
-import Articulos from "../pages/Articulos/Articulos";
-import DestinoSection from "../pages/Destino/DestinoSection";
+import {
+  Home,
+  InfoVisaSection,
+  ComienzaAqui,
+  WorkingHoliday,
+  Comunidad,
+  Articulos,
+  DestinoSection,
+} from "../pages";
 
 import { Route, Routes } from "react-router-dom";
 
@@ -15,7 +16,7 @@ const RoutesApp = () => {
       <Route exact path="/" element={<Home />} />
       <Route path="/country/:id" element={<InfoVisaSection />} />
       <Route path="/comienza-aqui/" element={<ComienzaAqui />} />
-      <Route path="/services/" element={<Servicio />} />
+     {/* { <Route path="/services/" element={<Servicio />} />} */}
       <Route path="/working-holiday/:id" element={<WorkingHoliday />} />
       <Route path="/comunidad/" element={<Comunidad />} />
       <Route path="/blog/:id" element={<Articulos />} />

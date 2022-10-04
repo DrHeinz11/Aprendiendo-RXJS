@@ -1,7 +1,7 @@
 import { Box, Heading, Stack, chakra } from "@chakra-ui/react";
 import React from "react";
 
-const MediaContianer = () => {
+const MediaContainer = () => {
   return (
     <Stack direction="column" align="center" textAlign="center" spacing={10}>
       <Heading
@@ -25,4 +25,4 @@ const MediaContianer = () => {
   );
 };
 
-export default MediaContianer;
+export default MediaContainer;

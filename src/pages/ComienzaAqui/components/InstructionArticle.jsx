@@ -1,6 +1,7 @@
 import CustomContainer from "./CustomContainer";
-import dataComienzaAqui from "../../constants/constantData/dataComienzaAqui";
+
 import { Image, Stack } from "@chakra-ui/react";
+import { dataComienzaAqui } from "../../../constants/";
 
 const InstructionArticle = () => {
   return dataComienzaAqui.map((e, index) => (

@@ -1,8 +1,8 @@
 import { Box, Heading, Text, Stack } from "@chakra-ui/react";
 import dataCardCountry from "../../constants/constantData/dataCardCountry";
 import { CustomBox } from "../../components/index";
-import FormDescription from "../../components/Description/FormDescription";
-import ImageDescription from "../../components/Description/ImageDescription";
+import { FormDescription, ImageDescription } from "./components";
+
 const bg = {
   base: "https://www.yomeanimo.com/wp-content/uploads/2022/01/Componente-8-–-5@2x.png",
   md: "https://www.yomeanimo.com/wp-content/uploads/2022/01/Componente-8-–-5@2x.png",

@@ -1,11 +1,10 @@
-import { CustomButtomRoute } from "../components/index";
-import arrObj from "../constants/constantData/dataCardCountry";
+import { CustomButtomRoute, CountryCard } from "./index";
 import { Link } from "react-router-dom";
 import { Stack, Box, Heading } from "@chakra-ui/react";
-import CountryCard from "../components/CountryCard";
+import { dataCardCountry } from "../constants/constantData";
 
 const CountrySlider = () => {
-  const arrSliced = arrObj.slice(0, 8);
+  const arrSliced = dataCardCountry.slice(0, 8);
   return (
     <Stack
       direction="column"

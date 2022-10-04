@@ -1,4 +1,4 @@
-const arrObj = [
+const dataCardCountry = [
   {
     url: "https://www.yomeanimo.com/wp-content/uploads/2021/09/DestacadasGuias_Australia.jpg",
     flagUrl:
@@ -97,4 +97,4 @@ const arrObj = [
   },
 ];
 
-export default arrObj;
+export default dataCardCountry;

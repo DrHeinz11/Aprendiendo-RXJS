@@ -1,6 +1,6 @@
 import { Stack, Heading, Text, Box, Image } from "@chakra-ui/react";
-import { CustomButtomRoute } from "./index";
-import dataCard from "../constants/constantData/dataCard";
+import { CustomButtomRoute } from "../../../components/index";
+import dataCard from "../../../constants/constantData/dataCard";
 
 const HomeInfoSection = () => {
   return (

@@ -1,7 +1,6 @@
 import { Button } from "@chakra-ui/react";
-import useTransform from "../../utils/useTransform";
 import { Link } from "react-router-dom";
-import handleScrollToTop from "../../utils/handleScrollToTop";
+import { handleScrollToTop, useTransform } from "../../utils";
 const CustomButtomRoute = ({ textButton, signalButton, sizeButton, route }) => {
   const textoButton = useTransform(textButton, signalButton);
   return (
