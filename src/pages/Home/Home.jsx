@@ -28,12 +28,12 @@ const Home = () => {
 				<ExperienceSection />
 				<StackDivider />
 				<HomeInfoSection />
-				{/*    <PromotionCard />
-      <BlogSection />
-      <PrensaSection />
-      <SocialMediaSection />
-      <FormSection />
-      <TermUseSection />*/}
+				{/* <PromotionCard />
+						<BlogSection />
+						<PrensaSection />
+						<SocialMediaSection />
+						<FormSection />
+						<TermUseSection />*/}
 			</Stack>
 		</>
 	);
