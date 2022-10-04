@@ -31,7 +31,7 @@ const FormOption = () => {
 			alignItems='flex-end'
 			wrap={'wrap'}
 			gap={{ base: 4, md: 10, lg: 20 }}
-			bg='primary.darkGranate'
+			bg='primary.lightGranate'
 			borderRadius='3xl'
 			boxShadow='0px 2px 10px rgba(255,255,255,0.25)'
 			w='full'

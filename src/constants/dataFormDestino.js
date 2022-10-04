@@ -12,7 +12,13 @@ export const dataFormDestino = [
 	{ value: 'denmark', country: 'Denmark', flag: '', id: 'C-4', key: '4' },
 	{ value: 'spain', country: 'Spain', flag: '', id: 'C-5', key: '5' },
 	{ value: 'ireland', country: 'Ireland', flag: '', id: 'C-7', key: '7' },
-	{ value: 'netherlands', country: 'NetherLands', flag: '', id: 'C-8', key: '8' },
+	{
+		value: 'netherlands',
+		country: 'NetherLands',
+		flag: '',
+		id: 'C-8',
+		key: '8',
+	},
 ];
 
 export const dataFormAge = [
