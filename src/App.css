@@ -1,21 +1,21 @@
 .links {
-  border-bottom: 2px solid transparent;
-  font-weight: 600;
-  color: #43173d;
+	border-bottom: 2px solid transparent;
+	font-weight: 600;
+	color: #43173d;
 }
 .links:hover,
 .links-footer:hover {
-  transition: border-bottom 400ms ease;
-  border-bottom: 2px solid red;
-  color: #5a0045;
+	transition: border-bottom 400ms ease;
+	border-bottom: 2px solid red;
+	color: #5a0045;
 }
 
 .links:focus,
 .links-footer:focus {
-  border-bottom: 2px solid rgb(255, 48, 48);
+	border-bottom: 2px solid rgb(255, 48, 48);
 }
 .links-footer {
-  margin: 0 !important;
-  border-bottom: 2px solid transparent;
-  font-weight: 400;
+	margin: 0 !important;
+	border-bottom: 2px solid transparent;
+	font-weight: 400;
 }
