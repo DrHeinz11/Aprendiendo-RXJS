@@ -1,6 +1,7 @@
 import { Grid, Heading, HStack } from '@chakra-ui/react';
 import { useState } from 'react';
 
+// eslint-disable-next-line react/prop-types
 const CardService = ({ service }) => {
 	const [focus, setFocus] = useState(false);
 	const handleFocusClick = () => setFocus(prev => !prev);

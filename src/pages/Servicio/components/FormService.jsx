@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const FormService = () => {
-  return (
-    <div>FormService</div>
-  )
-}
+	return <div>FormService</div>;
+};
 
-export default FormService
+export default FormService;

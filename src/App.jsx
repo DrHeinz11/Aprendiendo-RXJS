@@ -10,7 +10,7 @@ function App() {
 			<>
 				<Navbar data={dataHeader} />
 				<RoutesApp />
-				<Divider/>
+				<Divider />
 				<Footer />
 				<FooterCopyright />
 			</>
