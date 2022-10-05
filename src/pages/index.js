@@ -9,3 +9,4 @@ export * from './Home/components';
 export { default as Servicio } from './Servicio/Servicio';
 export { default as InfoVisaSection } from './WorkingHoliday/InfoVisaSection';
 export { default as WorkingHoliday } from './WorkingHoliday/WorkingHoliday';
+export * from './index';

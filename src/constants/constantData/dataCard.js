@@ -7,4 +7,4 @@ const dataCard = {
 	infoCopy:
 		'Aprendé como funcionan las visas que te permiten viajar y trabajar por el mundo!',
 };
- export default dataCard;
+export default dataCard;

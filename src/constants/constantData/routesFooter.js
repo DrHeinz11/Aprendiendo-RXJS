@@ -10,14 +10,18 @@ const routeFooter = [
 	{
 		title: 'Servicios',
 		routes: [
-			{ route: '/services/seguros/', routeName: 'Seguros de viaje', key: 7 },
 			{
-				route: '/services/estudios/',
+				route: '/services/seguros-de-viajes',
+				routeName: 'Seguros de viaje',
+				key: 7,
+			},
+			{
+				route: '/services/estudios',
 				routeName: 'Estudiar en el Exerior',
 				key: 8,
 			},
 			{
-				route: '/services/asesoria',
+				route: '/services/asesoria-personalizada',
 				routeName: 'Asesoría personalizada',
 				key: 9,
 			},

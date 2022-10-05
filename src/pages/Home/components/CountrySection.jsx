@@ -41,10 +41,7 @@ const CountrySection = () => {
 				))}
 			</Box>
 
-			<CustomButtomRoute
-				route='/working-holiday/visa'
-				textButton='Ver más destinos'
-			/>
+			<CustomButtomRoute route='/destinos/' textButton='Ver más destinos' />
 		</Stack>
 	);
 };

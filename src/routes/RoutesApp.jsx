@@ -6,6 +6,7 @@ import {
 	Comunidad,
 	Articulos,
 	DestinoSection,
+	Servicio,
 } from '../pages';
 
 import { Route, Routes } from 'react-router-dom';
@@ -16,7 +17,7 @@ const RoutesApp = () => {
 			<Route exact path='/' element={<Home />} />
 			<Route path='/country/:id' element={<InfoVisaSection />} />
 			<Route path='/comienza-aqui/' element={<ComienzaAqui />} />
-			{/* { <Route path="/services/" element={<Servicio />} />} */}
+			<Route path='/services/:id' element={<Servicio />} />
 			<Route path='/working-holiday/:id' element={<WorkingHoliday />} />
 			<Route path='/comunidad/' element={<Comunidad />} />
 			<Route path='/blog/:id' element={<Articulos />} />

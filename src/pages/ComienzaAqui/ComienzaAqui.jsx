@@ -1,6 +1,4 @@
 import { Header } from '../../components';
-
-import Footer from '../../components/FooterComponent/Footer';
 import { Divider } from '@chakra-ui/react';
 import {
 	InstructionArticle,
@@ -41,7 +39,6 @@ const ComienzaAqui = () => {
 			<Divider my={5} />
 			<ExperienceSlider />
 			<Divider my={5} />
-			<Footer />
 		</>
 	);
 };
