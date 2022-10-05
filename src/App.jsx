@@ -2,8 +2,7 @@ import './App.css';
 import { dataHeader } from './constants/dataHeader';
 import RoutesApp from './routes/RoutesApp';
 import { BrowserRouter } from 'react-router-dom';
-import Navbar from './components/Navbar/Navbar';
-import FooterCopyright from './components/FooterComponent/FooterCopyright';
+import { FooterCopyright, Navbar } from './components';
 function App() {
 	return (
 		<BrowserRouter>

@@ -2,34 +2,51 @@ const routeFooter = [
 	{
 		title: 'yomeamimo!',
 		routes: [
-			{ route: '/', routeName: 'comienza Aqui', key: 1 },
-			{ route: '/', routeName: 'comienza Aqui', key: 2 },
-			{ route: '/', routeName: 'comienza Aqui', key: 3 },
-			{ route: '/', routeName: 'comienza Aqui', key: 4 },
-			{ route: '/', routeName: 'comienza Aqui', key: 5 },
-			{ route: '/', routeName: 'comienza Aqui', key: 6 },
+			{ route: '/comienza-aqui/', routeName: 'comienza Aqui', key: 1 },
+			{ route: '/about-us/', routeName: 'Quienes somos', key: 2 },
+			{ route: '/services/', routeName: 'Contactate con nosotros', key: 3 },
 		],
 	},
 	{
-		title: 'yomeamimo!',
+		title: 'Servicios',
 		routes: [
-			{ route: '/', routeName: 'comienza Aqui', key: 7 },
-			{ route: '/', routeName: 'comienza Aqui', key: 8 },
-			{ route: '/', routeName: 'comienza Aqui', key: 9 },
-			{ route: '/', routeName: 'comienza Aqui', key: 10 },
-			{ route: '/', routeName: 'comienza Aqui', key: 11 },
-			{ route: '/', routeName: 'comienza Aqui', key: 12 },
+			{ route: '/services/seguros/', routeName: 'Seguros de viaje', key: 7 },
+			{
+				route: '/services/estudios/',
+				routeName: 'Estudiar en el Exerior',
+				key: 8,
+			},
+			{
+				route: '/services/asesoria',
+				routeName: 'Asesoría personalizada',
+				key: 9,
+			},
+			{ route: '/services/beneficios', routeName: 'Beneficios', key: 10 },
 		],
 	},
 	{
-		title: 'yomeamimo!',
+		title: 'Info útil!',
 		routes: [
-			{ route: '/', routeName: 'comienza Aqui', key: 12 },
-			{ route: '/', routeName: 'comienza Aqui', key: 13 },
-			{ route: '/', routeName: 'comienza Aqui', key: 14 },
-			{ route: '/', routeName: 'comienza Aqui', key: 15 },
-			{ route: '/', routeName: 'comienza Aqui', key: 16 },
-			{ route: '/', routeName: 'comienza Aqui', key: 17 },
+			{
+				route: '/working-holiday/visa',
+				routeName: '¿Qué es una VISA Working Holiday?',
+				key: 12,
+			},
+			{
+				route: '/working-holiday/visa/arg',
+				routeName: 'Working Holiday para Argentinos',
+				key: 13,
+			},
+			{
+				route: '/working-holiday/visa/chi',
+				routeName: 'Working Holiday para Chilenos',
+				key: 14,
+			},
+			{
+				route: '/work-and-travel/visa',
+				routeName: 'Work and travel VISA',
+				key: 15,
+			},
 		],
 	},
 ];

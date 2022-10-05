@@ -25,7 +25,7 @@ const ComienzaAqui = () => {
 				parrafo='Yo ya lo hice, y ahora te cuento como hacerlo vos mismo. Vas a conocer paso a paso cómo armar la experiencia de tu vida!'
 				textButton='comenzá tu viaje'
 				textColor='#fff'
-				route='/'
+				route='/destinos/'
 			/>
 			<Divider my={5} />
 			<InstructionArticle />

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
-import useTransform from '../../utils/useTransform';
 import { Stack } from '@chakra-ui/react';
+import { useTransform, handleScrollToTop } from '../../utils';
 
 const CustomFooterLink = ({ props }) => {
 	return (
@@ -8,7 +8,12 @@ const CustomFooterLink = ({ props }) => {
 			{props.map((e, index) => {
 				const routeName = useTransform(e.routeName);
 				return (
-					<Link className='links-footer' key={e.routeName + index} to={e.route}>
+					<Link
+						onClick={handleScrollToTop}
+						className='links-footer'
+						key={e.routeName + index}
+						to={e.route}
+					>
 						{routeName}
 					</Link>
 				);

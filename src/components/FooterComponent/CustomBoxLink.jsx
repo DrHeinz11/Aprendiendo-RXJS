@@ -1,21 +1,29 @@
 import CustomFooterLink from './CustomFooterLink';
 import { Stack, Heading } from '@chakra-ui/react';
-const CustomBoxLink = ({ props }) => {
+import { routesFooter } from '../../constants';
+const CustomBoxLink = () => {
 	return (
-		<Stack gap={10} justify={'center'} direction='row' flexWrap='wrap'>
-			{props.map((element, index) => (
+		<>
+			{routesFooter.map((element, index) => (
 				<Stack
 					key={`${element.title}${index}`}
 					flexWrap='wrap'
 					display='flex'
 					alignItems={'start'}
 					maxW='fit-content'
+					margin='0 !important'
 				>
-					<Heading fontSize='2xl'>{element.title}</Heading>
+					<Heading
+						textTransform='uppercase'
+						color='primary.darkGranate'
+						fontSize='xl'
+					>
+						{element.title}
+					</Heading>
 					<CustomFooterLink props={element.routes} />
 				</Stack>
 			))}
-		</Stack>
+		</>
 	);
 };
 export default CustomBoxLink;

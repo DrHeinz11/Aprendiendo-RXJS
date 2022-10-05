@@ -33,7 +33,7 @@ const Home = () => {
 						<PrensaSection />
 						<SocialMediaSection />
 						<FormSection />
-						<TermUseSection />*/}
+						<TermUseSection /> */}
 			</Stack>
 		</>
 	);

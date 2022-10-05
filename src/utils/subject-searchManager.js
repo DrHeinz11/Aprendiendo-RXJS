@@ -5,6 +5,7 @@ export class searchManager {
 	getSearchSubject() {
 		return this.searchSubject.asObservable();
 	}
+
 	setSearchSubject(value) {
 		return this.searchSubject.next(value);
 	}
