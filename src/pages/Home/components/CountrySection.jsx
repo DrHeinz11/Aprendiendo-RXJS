@@ -4,9 +4,34 @@ import { handleScrollToTop } from '../../../utils';
 import { Stack, Box, Heading } from '@chakra-ui/react';
 import { CustomButtomRoute } from '../../../components/index';
 import CountryCard from '../../../components/CountryCard';
+import { useState } from 'react';
+import { ArrowLeftIcon, ArrowRightIcon } from '@chakra-ui/icons';
 
 const CountrySection = () => {
-	const arrSliced = dataCardCountry.slice(0, 8);
+	const [initial, setInitial] = useState(0);
+	const [next, setNext] = useState(3);
+	const arrSliced = dataCardCountry.slice(initial, next);
+	const handleNextClick = () => {
+		if (next === dataCardCountry.length) {
+			setInitial(0);
+			setNext(3);
+			return;
+		}
+		setInitial(prev => prev + 3);
+		setNext(prev => prev + 3);
+	};
+
+	const handlePrevClick = () => {
+		if (next - 3 <= 0) {
+			setInitial(dataCardCountry.length);
+			setNext(dataCardCountry.length);
+			return;
+		}
+		setInitial(prev => prev - 3);
+		setNext(prev => prev - 3);
+	};
+
+	console.log(initial, next);
 	return (
 		<Stack
 			direction='column'
@@ -24,7 +49,9 @@ const CountrySection = () => {
 			>
 				Conocé todos los destinos Working Holiday
 			</Heading>
-			<Box p={4} gap={4} width='100%' overflowX={'scroll'} display='flex'>
+			<Box p={4} gap={4} display='flex' maxWidth={{base:'300px',md:'full'}} alignItems='center' transition='all 3s'>
+				{initial !== 0 && <ArrowLeftIcon onClick={handlePrevClick} />}
+				
 				{arrSliced.map(element => (
 					<Link
 						to={`/country/${element.title}/`}
@@ -39,8 +66,8 @@ const CountrySection = () => {
 						/>
 					</Link>
 				))}
+				<ArrowRightIcon onClick={handleNextClick} />
 			</Box>
-
 			<CustomButtomRoute route='/destinos/' textButton='Ver más destinos' />
 		</Stack>
 	);
