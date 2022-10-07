@@ -1,11 +1,6 @@
-import { Header } from '../../components';
+import { Carrousel, Header } from '../../components';
 import { Divider } from '@chakra-ui/react';
-import {
-	InstructionArticle,
-	CtaCard,
-	MediaContainer,
-	ExperienceSlider,
-} from './components/';
+import { InstructionArticle, CtaCard, MediaContainer } from './components/';
 
 const ComienzaAqui = () => {
 	const bg = {
@@ -37,7 +32,7 @@ const ComienzaAqui = () => {
 			<Divider my={5} />
 			<MediaContainer />
 			<Divider my={5} />
-			<ExperienceSlider />
+			<Carrousel />
 			<Divider my={5} />
 		</>
 	);

@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Divider, Image, Stack, Text } from '@chakra-ui/react';
+import { Divider, HStack, Image, Stack, Text } from '@chakra-ui/react';
 
 const data = {
 	imgUrl:
@@ -36,16 +36,15 @@ const FooterCopyright = () => {
 				</Text>
 			</Stack>
 			<Divider />
-			<Stack
+			<HStack
 				spacing={10}
-				direction='row'
 				wrap={'wrap'}
 				justifyContent='center'
 				py={5}
 			>
 				<Link to={'/'}>Terminos de uso</Link>
 				<Link to={'/'}>Politica de privacidad</Link>
-			</Stack>
+			</HStack>
 			<Divider />
 			<Text textAlign='center' p={3} fontSize={'xs'} color='blackAlpha.600'>
 				©FrancMartin 2022 - YoMeAnimo! CLONE. Todos los derechos reservados y

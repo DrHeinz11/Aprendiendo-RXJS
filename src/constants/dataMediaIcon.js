@@ -1,27 +1,34 @@
+import {
+	InstagramIcon,
+	FacebookIcon,
+	TikTokIcon,
+	TelegramIcon,
+	YouTubeIcon,
+} from '../assets/icon';
 export const dataMediaIcon = [
 	{
 		route: 'https://www.facebook.com/',
-		mediaIcon: 'icon',
+		mediaIcon: FacebookIcon,
 		alt: 'facebook',
 	},
 	{
 		route: 'https://www.instagram.com/',
-		mediaIcon: 'icon',
+		mediaIcon: InstagramIcon,
 		alt: 'instagram',
 	},
 	{
 		route: 'https://www.tiktok.com/',
-		mediaIcon: 'icon',
+		mediaIcon: TikTokIcon,
 		alt: 'tiktok',
 	},
 	{
 		route: 'https://www.youtube.com/',
-		mediaIcon: 'icon',
+		mediaIcon: YouTubeIcon,
 		alt: 'youtube',
 	},
 	{
 		route: 'https://www.telegram.com/',
-		mediaIcon: 'icon',
+		mediaIcon: TelegramIcon,
 		alt: 'telegram',
 	},
 ];

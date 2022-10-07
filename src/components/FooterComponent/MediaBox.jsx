@@ -1,6 +1,5 @@
-import { Heading, Text, Image, Stack, HStack } from '@chakra-ui/react';
+import { Heading, Text, Stack, HStack, Link } from '@chakra-ui/react';
 import { handleScrollToTop } from '../../utils';
-import { Link } from 'react-router-dom';
 import { dataMediaIcon } from '../../constants';
 const MediaBox = () => {
 	return (
@@ -9,14 +8,17 @@ const MediaBox = () => {
 			<Text color='primary.darkGranate' fontSize='lg'>
 				Seguinos en las redes y enterate de las últimas novedades.
 			</Text>
-			<HStack justify={'space-between'}>
+			<HStack justify={'flex-start'}>
 				{dataMediaIcon.map(element => (
 					<Link
+						cursor='pointer'
+						rel='noreferrer'
 						key={element.alt}
-						to={element.route}
+						href={element.route}
+						target={'_blank'}
 						onClick={handleScrollToTop}
 					>
-						<Image boxSize='48px' src={element.mediaIcon} alt={element.alt} />
+						<>{element.mediaIcon({ fill: '#00DBD0', hovered: '#EC3862' })}</>
 					</Link>
 				))}
 			</HStack>
