@@ -19,12 +19,12 @@ const CardService = ({ children, service }) => {
 			_hover={{
 				backgroundColor: 'primary.lightGranate',
 				color: '#fff',
-				fill:'#fff'
+				fill: '#fff',
 			}}
 		>
 			<HStack>
 				<>{children}</>
-				<Heading fontSize="xl">{service}</Heading>
+				<Heading fontSize='xl'>{service}</Heading>
 			</HStack>
 		</Grid>
 	);

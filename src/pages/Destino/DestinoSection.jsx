@@ -8,7 +8,7 @@ const DestinoSection = () => {
 		<Box bg='#E2E8F0'>
 			<CustomBox
 				align={'flex-start'}
-				sizes={{ height: { base: '125vh',md:'100vh', lg: '90vh' } }}
+				sizes={{ height: { base: '125vh', md: '100vh', lg: '90vh' } }}
 				background={BackgroundCustomBox}
 			>
 				<FormDescription />

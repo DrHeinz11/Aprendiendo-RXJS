@@ -9,7 +9,6 @@ const CountryCard = ({ url, flagUrl, title, id }) => {
 			width='175px'
 			_hover={{
 				boxShadow: 'dark-lg',
-				transform: 'scale(1.10)',
 			}}
 		>
 			<Image
