@@ -16,5 +16,7 @@ export { default as SearchBar } from './Navbar/SearchBar';
 export { default as SearchInput } from './Navbar/SearchInput';
 export { default as PromotionCard } from './PromotionCard';
 export { default as TagFlag } from './TagFlag';
+export { default as Slider } from './Slider';
+export { default as Carrousel } from './Carrousel';
 export * from './custom';
 export * from './index';
