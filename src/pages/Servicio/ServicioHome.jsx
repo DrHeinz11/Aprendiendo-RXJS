@@ -1,5 +1,4 @@
 import { Box } from '@chakra-ui/react';
-import { useState } from 'react';
 import { GraduationIcon, PlusMedicalIcon } from '../../assets';
 import { CardService } from './components';
 
