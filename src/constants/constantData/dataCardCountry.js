@@ -5,7 +5,10 @@ const dataCardCountry = [
 			'https://www.yomeanimo.com/wp-content/uploads/2021/04/flag-australia.svg',
 		title: 'Australia',
 		id: 'C-1',
-		info: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		info: 'Working Holiday Australia para argentinos que les va a permitir poder trabajar en el país durante 1 año, ¡E incluso extenderla por 2 años más!',
+		subInfo:`Vamos a hablar específicamente de la visa Working holiday Australia Subclass 462, que es la que pueden obtener con pasaporte argentino, chileno o uruguayo entre otros.
+		
+		Si tienen pasaporte italiano o francés, por ejemplo, pueden acceder a la Working Holiday Australia Subclass 417 que tiene menos requisitos!`
 	},
 	{
 		url: 'https://www.yomeanimo.com/wp-content/uploads/2021/11/DestacadasGuias_NuevaZelanda.jpg',

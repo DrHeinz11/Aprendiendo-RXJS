@@ -3,7 +3,16 @@ import FormOption from './FormOption';
 
 const FormDescription = () => {
 	return (
-		<Stack alignItems={'center'}>
+		<Stack
+			position=' absolute'
+			top='2rem'
+			left='0'
+			right='0'
+			width='fit-content'
+			margin='0 auto'
+			px={2}
+			alignItems={'center'}
+		>
 			<Box textAlign='center' mb={4}>
 				<Heading fontSize={{ base: '4xl', md: '5xl' }} color='#fff'>
 					Viajá y Trabajá por el mundo!

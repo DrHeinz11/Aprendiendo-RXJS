@@ -1,6 +1,6 @@
 import { Box, Heading, Image, Stack, Text } from '@chakra-ui/react';
 
-const DescriptionCard = ({ flagUrl, title, url, info }) => {
+const DescriptionCard = ({subInfo, flagUrl, title, url, info }) => {
 	return (
 		<Stack
 			bg='#efefef'
@@ -24,9 +24,10 @@ const DescriptionCard = ({ flagUrl, title, url, info }) => {
 				</Stack>
 				<Image src={url} />
 			</Stack>
-			<Box w={{ base: 'full', md: 'md' }}>
-				<Text>{info}</Text>
-			</Box>
+			<Stack gap='2' w={{ base: 'full', md: 'md' }}>
+				<Text fontSize='lg' fontWeight='medium'>{info}</Text>
+				<Text fontSize='md' >{subInfo}</Text>
+			</Stack>
 		</Stack>
 	);
 };

@@ -16,7 +16,7 @@ const useDataSubscription = () => {
 			);
 			setData.length &&
 				setTimeout(() => {
-					handleScrollDown(640);
+					handleScrollDown(540);
 				}, 300);
 			return setDataResponse(setData);
 		});

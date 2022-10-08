@@ -32,6 +32,7 @@ const ImageDescription = () => {
 						flagUrl={elm.flagUrl}
 						title={elm.title}
 						info={elm.info}
+						subInfo={elm.subInfo}
 						url={elm.url}
 					/>
 				</Box>

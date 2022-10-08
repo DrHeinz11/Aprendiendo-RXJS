@@ -5,14 +5,14 @@ import { BackgroundCustomBox } from '../../constants';
 
 const DestinoSection = () => {
 	return (
-		<Box bg='#E2E8F0'>
+		<Box bg='#E2E8F0' position='relative'>
 			<CustomBox
 				align={'flex-start'}
-				sizes={{ height: { base: '125vh', md: '100vh', lg: '90vh' } }}
+				sizes={{ height: { base: '125vh', md: '100vh', lg: '70vh' } }}
 				background={BackgroundCustomBox}
 			>
-				<FormDescription />
 			</CustomBox>
+				<FormDescription />
 			<ImageDescription />
 		</Box>
 	);
