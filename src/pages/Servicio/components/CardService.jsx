@@ -8,13 +8,14 @@ const CardService = ({ children, service }) => {
 	return (
 		<Grid
 			w='fit-content'
+			cursor='pointer'
 			placeContent='center'
 			px={{ base: 9, md: 24 }}
 			py={{ base: 3, md: 6 }}
 			boxShadow={focus ? '2xl' : 'md'}
 			borderRadius='xl'
 			color={focus ? '#fff' : 'primary.darkGranate'}
-			backgroundColor={focus ? 'primary.darkGranate' : '#fff'}
+			backgroundColor={focus ? 'primary.darkGranate' : '#fafafa'}
 			onClick={handleFocusClick}
 			_hover={{
 				backgroundColor: 'primary.lightGranate',

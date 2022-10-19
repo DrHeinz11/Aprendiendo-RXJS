@@ -36,12 +36,7 @@ const FooterCopyright = () => {
 				</Text>
 			</Stack>
 			<Divider />
-			<HStack
-				spacing={10}
-				wrap={'wrap'}
-				justifyContent='center'
-				py={5}
-			>
+			<HStack spacing={10} wrap={'wrap'} justifyContent='center' py={5}>
 				<Link to={'/'}>Terminos de uso</Link>
 				<Link to={'/'}>Politica de privacidad</Link>
 			</HStack>

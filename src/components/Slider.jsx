@@ -28,7 +28,11 @@ const Slider = ({ widthTransfrom }) => {
 				}}
 			>
 				{dataCardCountry.map(element => (
-					<Link onClick={handleScrollToTop} to={`/country/${element.title}/`} key={element.id}>
+					<Link
+						onClick={handleScrollToTop}
+						to={`/country/${element.title}/`}
+						key={element.id}
+					>
 						<CountryCard
 							title={element.title}
 							url={element.url}

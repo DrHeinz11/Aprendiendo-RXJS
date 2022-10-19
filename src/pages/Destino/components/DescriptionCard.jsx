@@ -1,6 +1,16 @@
-import { Box, Heading, Image, Stack, Text } from '@chakra-ui/react';
+import {
+	Collapse,
+	Button,
+	Heading,
+	Image,
+	Stack,
+	Text,
+} from '@chakra-ui/react';
+import { useState } from 'react';
 
-const DescriptionCard = ({subInfo, flagUrl, title, url, info }) => {
+const DescriptionCard = ({ subInfo, flagUrl, title, url, info }) => {
+	const [show, setShow] = useState(false);
+	const handleToggle = () => setShow(!show);
 	return (
 		<Stack
 			bg='#efefef'
@@ -22,11 +32,22 @@ const DescriptionCard = ({subInfo, flagUrl, title, url, info }) => {
 					/>
 					<Heading>{title}</Heading>
 				</Stack>
-				<Image src={url} />
+				<Image maxW='448px' src={url} />
 			</Stack>
 			<Stack gap='2' w={{ base: 'full', md: 'md' }}>
-				<Text fontSize='lg' fontWeight='medium'>{info}</Text>
-				<Text fontSize='md' >{subInfo}</Text>
+				<Collapse startingHeight={105} in={show}>
+					<Text fontSize='lg' fontWeight='medium'>
+						{info}
+					</Text>
+					<Text fontSize='md'>{subInfo}</Text>
+				</Collapse>
+				<Button
+					onClick={handleToggle}
+					variant='link'
+					color='primary.darkGranate'
+				>
+					{!show ? 'Leer más.' : 'Collapse'}
+				</Button>
 			</Stack>
 		</Stack>
 	);

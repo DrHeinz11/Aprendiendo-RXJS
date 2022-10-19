@@ -10,9 +10,8 @@ const DestinoSection = () => {
 				align={'flex-start'}
 				sizes={{ height: { base: '125vh', md: '100vh', lg: '70vh' } }}
 				background={BackgroundCustomBox}
-			>
-			</CustomBox>
-				<FormDescription />
+			></CustomBox>
+			<FormDescription />
 			<ImageDescription />
 		</Box>
 	);

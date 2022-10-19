@@ -1,5 +1,5 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
-import { Box, Stack } from '@chakra-ui/react';
+import { Stack } from '@chakra-ui/react';
 import { useState } from 'react';
 import { Slider } from '.';
 
@@ -16,14 +16,14 @@ const Carrousel = () => {
 	};
 
 	return (
-		<Stack direction='row' justify='center' alignItems='center'> 
-				<ChevronLeftIcon
-					onClick={scrollMethods.scrollLeft}
-					cursor='pointer'
-					width='3rem'
-					height='3rem'
-					display={{ base: 'none', md: 'block' }}
-				/> 
+		<Stack direction='row' justify='center' alignItems='center'>
+			<ChevronLeftIcon
+				onClick={scrollMethods.scrollLeft}
+				cursor='pointer'
+				width='3rem'
+				height='3rem'
+				display={{ base: 'none', md: 'block' }}
+			/>
 			<Slider widthTransfrom={widthTransfrom} />
 			<ChevronRightIcon
 				onClick={scrollMethods.scrollRight}
@@ -32,7 +32,7 @@ const Carrousel = () => {
 				height='3rem'
 				display={{ base: 'none', md: 'block' }}
 				_hover={{ filter: 'drop-shadow' }}
-			/> 
+			/>
 		</Stack>
 	);
 };

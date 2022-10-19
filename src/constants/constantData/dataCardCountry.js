@@ -6,9 +6,9 @@ const dataCardCountry = [
 		title: 'Australia',
 		id: 'C-1',
 		info: 'Working Holiday Australia para argentinos que les va a permitir poder trabajar en el país durante 1 año, ¡E incluso extenderla por 2 años más!',
-		subInfo:`Vamos a hablar específicamente de la visa Working holiday Australia Subclass 462, que es la que pueden obtener con pasaporte argentino, chileno o uruguayo entre otros.
+		subInfo: `Vamos a hablar específicamente de la visa Working holiday Australia Subclass 462, que es la que pueden obtener con pasaporte argentino, chileno o uruguayo entre otros.
 		
-		Si tienen pasaporte italiano o francés, por ejemplo, pueden acceder a la Working Holiday Australia Subclass 417 que tiene menos requisitos!`
+		Si tienen pasaporte italiano o francés, por ejemplo, pueden acceder a la Working Holiday Australia Subclass 417 que tiene menos requisitos!`,
 	},
 	{
 		url: 'https://www.yomeanimo.com/wp-content/uploads/2021/11/DestacadasGuias_NuevaZelanda.jpg',
