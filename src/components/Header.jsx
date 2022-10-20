@@ -15,7 +15,7 @@ const Header = ({
 		<Stack positon='column' justify='center'>
 			<CustomBox
 				background={background}
-				sizes={{ height: { base: '55vh', md: '90vh', lg: '85vh' } }}
+				sizes={{ height: { base: '55vh', md: '90vh', lg: '100vh' } }}
 			/>
 			<Stack
 				width={{ base: 'full', md: '50%', lg: '34rem' }}

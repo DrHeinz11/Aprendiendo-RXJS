@@ -5,7 +5,7 @@ import { BackgroundCustomBox } from '../../constants';
 
 const DestinoSection = () => {
 	return (
-		<Box bg='#E2E8F0' position='relative'>
+		<Box bg='#f1f1f1' minH={'100vh'} position='relative'>
 			<CustomBox
 				align={'flex-start'}
 				sizes={{ height: { base: '125vh', md: '100vh', lg: '70vh' } }}

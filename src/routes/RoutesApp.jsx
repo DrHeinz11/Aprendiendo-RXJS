@@ -21,9 +21,9 @@ const RoutesApp = () => {
 			<Route path='/services/:id' element={<Servicio />} />
 			<Route path='/services/' element={<ServicioHome />} />
 			<Route path='/working-holiday/:id' element={<WorkingHoliday />} />
+			<Route path='/working-holiday/visa' element={<InfoVisaSection />} />
 			<Route path='/comunidad/' element={<Comunidad />} />
 			<Route path='/blog/:id' element={<Articulos />} />
-			<Route path='/working-holiday/visa' element={<InfoVisaSection />} />
 			<Route path='/destinos/' element={<DestinoSection />} />
 		</Routes>
 	);
