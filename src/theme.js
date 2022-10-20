@@ -12,6 +12,7 @@ const theme = extendTheme({
 			lightGranate: '#5A0045',
 			lightAqua: '#cbfcf9',
 			darkAqua: '#00dbd0 ',
+			pinkChicle: '#EA2250',
 		},
 	},
 });

@@ -1,13 +1,4 @@
-import {
-	Box,
-	Divider,
-	Grid,
-	GridItem,
-	Heading,
-	HStack,
-	Image,
-	Text,
-} from '@chakra-ui/react';
+import { Box, Grid, GridItem, Heading, Image } from '@chakra-ui/react';
 import InfoBox from './InfoBox';
 const dataInfoBox = [
 	{
@@ -62,71 +53,51 @@ const dataInfoBox = [
 	},
 ];
 
-const GridAreas = `"box-1 divider box-2"
-"box-3 divider box-4"
-"box-5 divider box-6"`;
+const GridAreas = `"box-0 divider box-1"
+"box-2 divider box-3"
+"box-4 divider box-5"
+"box-6 divider ."`;
+const GridAreasMD = `"box-0 box-1"
+"box-2  box-3"
+"box-4 box-5"
+"box-6 ."`;
 
 const InfoSection = () => {
 	return (
-		<HStack
-			flexWrap='wrap'
-			as='section'
+		<Grid
+			gridTemplateColumns={{ md: '1fr 1fr', lg: '1fr 0.5fr 1fr' }}
+			gridTemplateAreas={{ base: 'none', md: GridAreasMD, lg: GridAreas }}
 			w='full'
-			justify='center'
-			px={{ base: 4, md: 10 }}
+			height={'auto'}
+			alignItems={'center'}
+			justifyItems={'center'}
 		>
-			<HStack
-				flexWrap={{ base: 'wrap', md: 'nowrap' }}
-				align='center'
-				justify='center'
-				width={{ base: 'full', md: 'container.lg' }}
+			<Box
+				px={{ base: 0, md: 10 }}
+				area={'box-0'}
+				textAlign={{ base: 'center', sm: 'start' }}
 			>
-				<Box textAlign='start' color='primary.granate'>
-					<Heading pr={{ base: 0, md: 20 }} fontSize='5xl' mb='4'>
-						Animate a viajar y trabajar en el exterior
-					</Heading>
-					<Text fontWeight='medium'>
-						Las visas working holiday son un tipo de visa que te permite viajar
-						a un destino con el fin de trabajar y recorrer el país durante 1
-						año. Vas a poder ahorrar dinero, conocer gente de todo el mundo,
-						viajar mucho, y lo mejor de todo, podés armar todo el viaje vos
-						mismo.
-					</Text>
-				</Box>
-				<Image
-					boxSize='22rem'
-					src='https://www.yomeanimo.com/wp-content/uploads/2021/03/animate-a-viajar-y-trabajar.svg'
-					alt='Animate'
+				<Heading fontSize='4xl' color={'primary.pinkChicle'}>
+					Las características más importantes que debés saber
+				</Heading>
+			</Box>
+			{dataInfoBox.map(element => (
+				<InfoBox
+					imgAlt={element.imgAlt}
+					imgUrl={element.imgUrl}
+					heading={element.heading}
+					paragraph={element.paragraph}
+					key={element.id}
+					id={element.id}
 				/>
-			</HStack>
-			<Divider />
-			<Grid
-				// gridTemplateColumns={'1fr 0.5fr 1fr'}
-				// gridTemplateRows={'1fr 1fr 1fr'}
-				gridTemplateAreas={{ base: 'none', md: GridAreas }}
-				w='full'
-				height={'auto'}
-				alignItems={'center'}
-				justifyItems={'center'}
-			>
-				{dataInfoBox.map(element => (
-					<InfoBox
-						imgAlt={element.imgAlt}
-						imgUrl={element.imgUrl}
-						heading={element.heading}
-						paragraph={element.paragraph}
-						key={element.id}
-						id={element.id}
-					/>
-				))}
-				<GridItem area='divider' display={{ base: 'none', lg: 'grid' }}>
-					<Image
-						src='https://www.yomeanimo.com/wp-content/themes/creativedog-timber-theme-v2/assets/images/_Tramas/step-by-step-path.svg'
-						alt='divider'
-					/>
-				</GridItem>
-			</Grid>
-		</HStack>
+			))}
+			<GridItem area='divider' display={{ base: 'none', lg: 'grid' }} py='4'>
+				<Image
+					src='https://www.yomeanimo.com/wp-content/themes/creativedog-timber-theme-v2/assets/images/_Tramas/step-by-step-path.svg'
+					alt='divider'
+				/>
+			</GridItem>
+		</Grid>
 	);
 };
 

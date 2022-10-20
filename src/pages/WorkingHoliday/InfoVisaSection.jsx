@@ -1,6 +1,7 @@
-import { chakra, Heading, Stack } from '@chakra-ui/react';
+import { chakra, Divider, Heading, HStack, Stack } from '@chakra-ui/react';
 import InfoSection from './components/InfoSection';
 import '../../components/custom/CustomBox.css';
+import HeadingSection from './components/HeadingSection';
 
 const InfoVisaSection = () => {
 	return (
@@ -18,7 +19,17 @@ const InfoVisaSection = () => {
 			>
 				<Heading fontSize='4xl'>¿Qué es una VISA Working Holiday?</Heading>
 			</chakra.div>
-			<InfoSection />
+			<HStack
+				flexWrap='wrap'
+				as='section'
+				w='full'
+				justify='center'
+				px={{ base: 4, md: 10 }}
+			>
+				<HeadingSection />
+				<Divider />
+				<InfoSection />
+			</HStack>
 		</Stack>
 	);
 };
