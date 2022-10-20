@@ -2,10 +2,11 @@ import { chakra, Divider, Heading, HStack, Stack } from '@chakra-ui/react';
 import InfoSection from './components/InfoSection';
 import '../../components/custom/CustomBox.css';
 import HeadingSection from './components/HeadingSection';
+import Benefits from './components/Benefits';
 
 const InfoVisaSection = () => {
 	return (
-		<Stack minH='100vh' bg='#f8f8f8'>
+		<Stack minH='100vh' bg='#f8f8f8' gap='10'>
 			<chakra.div
 				className='box'
 				as={Stack}
@@ -30,6 +31,9 @@ const InfoVisaSection = () => {
 				<Divider />
 				<InfoSection />
 			</HStack>
+			<Divider />
+			<Benefits />
+			<Divider />
 		</Stack>
 	);
 };
