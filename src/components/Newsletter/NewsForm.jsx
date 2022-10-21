@@ -15,38 +15,43 @@ const NewsForm = () => {
 			onSubmit={event => handleSubmit(event)}
 		>
 			<chakra.input
+				minW='300px'
 				p='4'
 				borderRadius='xl'
 				bg='#fafafa'
 				color='#000'
-				fontSize='xl'
+				fontSize='md'
 				fontWeight='bold'
 				type='text'
 				required
 				placeholder='Nombre*'
 				_placeholder={{ color: '#c1c1c1' }}
+				_focusVisible={{ outline: 0 }}
 			/>
 			<chakra.input
+				minW='300px'
 				p='4'
 				h='fit-content'
 				borderRadius='xl'
 				bg='#fafafa'
 				color='#000'
-				fontSize='xl'
+				fontSize='md'
 				fontWeight='bold'
 				type='email'
 				required
 				placeholder='Email*'
 				_placeholder={{ color: '#c1c1c1' }}
+				_focusVisible={{ outline: 0 }}
 			/>
 			<chakra.select
 				cursor='pointer'
 				h='fit-content'
-				fontSize='xl'
+				fontSize='md'
 				fontWeight='bold'
 				px='6'
 				py='4'
 				borderRadius='xl'
+				_focusVisible={{ outline: 0 }}
 			>
 				<chakra.option cursor='pointer' value='argentina'>
 					Argentina
@@ -68,12 +73,13 @@ const NewsForm = () => {
 				py='4'
 				borderRadius='xl'
 				textTransform='initial'
-				fontSize={{ base: 'lg', md: 'xl' }}
+				fontSize={{ base: 'md', md: 'lg' }}
 				fontWeight='bold'
 				color='white'
 				type='submit'
+				_focusVisible={{ outline: 0 }}
 			>
-				Enviar
+				Subscribe!
 			</chakra.button>
 		</chakra.form>
 	);

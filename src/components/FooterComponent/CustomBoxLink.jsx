@@ -12,6 +12,7 @@ const CustomBoxLink = () => {
 					alignItems={'start'}
 					maxW='fit-content'
 					margin='0 !important'
+					zIndex='10'
 				>
 					<Heading
 						textTransform='uppercase'

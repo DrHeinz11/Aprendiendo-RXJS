@@ -9,7 +9,7 @@ const NewsLetter = () => {
 			justifyContent='center'
 			textAlign='center'
 			w='full'
-			h={{ base: 'auto', lg: 'sm' }}
+			h={{ base: 'auto', lg: 'xs' }}
 			position='relative'
 			bg='primary.darkAqua'
 			py='10'

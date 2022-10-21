@@ -5,12 +5,12 @@ import MediaBox from './MediaBox';
 const Footer = () => {
 	return (
 		<Stack
-			px={10}
-			py={5}
+			p='10'
 			gap={{ base: 5, md: 10 }}
 			justify={{ base: 'flex-start', md: 'center' }}
 			direction='row'
 			flexWrap='wrap'
+			zIndex='100'
 		>
 			<CustomBoxLink />
 			<MediaBox />

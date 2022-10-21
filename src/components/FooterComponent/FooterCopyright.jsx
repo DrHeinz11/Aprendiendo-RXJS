@@ -27,7 +27,7 @@ const FooterCopyright = () => {
 					_hover={{ opacity: 0.7, trasition: 'opacity 300ms' }}
 					maxW='220px'
 					src={data.imgUrl}
-					alt={data.imgTitle}
+					alt={'YoMeAnimoLogo'}
 				/>
 				<Text>
 					Dedicados a ayudarte a conocer el mundo, ya sea trabajando y viajando,
