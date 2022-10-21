@@ -1,6 +1,8 @@
 import { Grid, Heading, Stack, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
+import { dataCursosCountry } from '../../../../constants/dataCursosCountry.data';
 import CardCurso from '../CardCursoDestino/CardCurso';
+import CardCursoDestino from '../CardCursoDestino/CardCursoDestino';
 import CountrySelect from './CountrySelect';
 const dataDestino = [
 	{
@@ -33,9 +35,13 @@ const dataDestino = [
 ];
 const CursosInCountry = () => {
 	const [selected, setSelected] = useState('');
+	const [dataFilter, setDataFilter] = useState([]);
 
 	useEffect(() => {
-		console.log(selected);
+		const filtered = dataCursosCountry.filter(
+			element => element.country === selected.value
+		);
+		setDataFilter(filtered);
 	}, [selected]);
 	return (
 		<Stack
@@ -64,22 +70,36 @@ const CursosInCountry = () => {
 					margin='0 auto'
 					p='8'
 				>
-					{dataDestino.map(element => (
-						<CountrySelect
-							imgUrl={element.imgUrl}
-							imgAlt={element.imgAlt}
-							value={element.text}
-							key={element.id}
-							id={element.id}
-							setSelected={setSelected}
-						/>
-					))}
+					{dataDestino?.map(element => {
+						return (
+							<CountrySelect
+								imgUrl={element.imgUrl}
+								imgAlt={element.imgAlt}
+								value={element.text}
+								key={element.id}
+								id={element.id}
+								setSelected={setSelected}
+							/>
+						);
+					})}
 				</Grid>
 			</Stack>
 
-			{selected?.map(element => (
-				<CardCurso props={element} key={element.id} />
-			))}
+			{dataFilter?.map(element => {
+				// console.log(element);
+				return (
+					<CardCursoDestino
+						heading={element.heading}
+						imgUrl={element.imgUrl}
+						key={element.id}
+					>
+						{element.cursos.map(element => {
+							console.log(element);
+							return <CardCurso key={element.id} details={element.details} title={element.title} />;
+						})}
+					</CardCursoDestino>
+				);
+			})}
 		</Stack>
 	);
 };

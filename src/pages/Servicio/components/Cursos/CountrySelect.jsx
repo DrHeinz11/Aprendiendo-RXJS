@@ -15,7 +15,7 @@ const CountrySelect = ({ value, imgUrl, imgAlt, setSelected, id }) => {
 			h='60'
 			_hover={{ color: '#8b006c', boxShadow: 'xl' }}
 			cursor='pointer'
-			onClick={() => setSelected([{ id, value }])}
+			onClick={() => setSelected({ id, value, imgUrl })}
 		>
 			<Image src={imgUrl} alt={imgAlt} boxSize={{ base: '88px', md: '92px' }} />
 			<Heading fontSize='xl'>{value}</Heading>

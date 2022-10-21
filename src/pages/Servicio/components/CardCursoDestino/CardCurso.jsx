@@ -1,28 +1,22 @@
 import { Box, Heading, Stack, Text } from '@chakra-ui/react';
 import { CustomButtonOnly } from '../../../../components';
 
-const CardCurso = ({ props: { value, dataCurso } }) => {
+const CardCurso = ({ details, title }) => {
 	return (
-		<Stack
-			as='article'
-			bg='#c1c1c1'
-			borderRadius='md'
-			boxShadow='sm'
-			p='10'
-			alignItems='center'
-			textAlign='center'
-		>
-			<Box>
-				<Heading>{value}</Heading>
-				{dataCurso?.map(curso => (
-					<Text key={curso.id}>
-						{curso.text}
-						{curso.bold && <Text fontWeight={'Bold'}>{curso.bold}</Text>}
-					</Text>
+		<Stack alignItems={'center'} bg='#eef1f6' py='10' borderRadius='sm' boxShadow='md'>
+			<Heading color='#7d35c0'>{title}</Heading>
+			<Stack w='full'>
+				{details.map(elem => (
+					<Box key={elem.id}>
+						<Text fontSize='xl'>{elem.text}</Text>
+						<Text fontWeight='bold' fontSize='lg'>
+							{elem.bold}
+						</Text>
+					</Box>
 				))}
-			</Box>
+			</Stack>
 			<CustomButtonOnly>
-				<Heading>Me interesa!</Heading>
+				<Text>Me interesa!</Text>
 			</CustomButtonOnly>
 		</Stack>
 	);
