@@ -43,6 +43,7 @@ const CursosInCountry = () => {
 		);
 		setDataFilter(filtered);
 	}, [selected]);
+	
 	return (
 		<Stack
 			alignItems='center'

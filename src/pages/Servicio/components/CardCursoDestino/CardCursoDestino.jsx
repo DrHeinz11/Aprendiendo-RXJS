@@ -5,17 +5,16 @@ const CardCursoDestino = ({ children, heading, imgUrl }) => {
 		<Stack
 			gap='4'
 			as='section'
-			bg='#c1c1c1'
-			borderRadius='sm'
-			boxShadow='xs'
 			p={{ base: 2, md: 10 }}
 			alignItems='center'
 			textAlign='center'
 			w='full'
 		>
 			<HStack spacing='4' aling='center'>
-				<Heading>{heading}</Heading>
 				<Image boxSize='68px' src={imgUrl} alt={`${heading}-flag`} />
+				<Heading fontSize={{ base: '2xl', md: '4xl', lg: '6xl' }}>
+					{heading}
+				</Heading>
 			</HStack>
 			<Grid
 				w='full'

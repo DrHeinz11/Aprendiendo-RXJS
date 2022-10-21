@@ -1,7 +1,7 @@
 export const dataCursosCountry = [
 	{
 		country: 'Malta',
-		imgUrl: '',
+		imgUrl: 'https://www.yomeanimo.com/wp-content/uploads/2021/06/sasa.svg',
 		heading: 'Malta',
 		cursos: [
 			{
