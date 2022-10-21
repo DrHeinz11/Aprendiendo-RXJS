@@ -19,7 +19,7 @@ const CardCursoDestino = ({ children, heading, imgUrl }) => {
 			<Grid
 				w='full'
 				gap='4'
-				gridTemplateColumns='repeat(auto-fill,minmax(350px,1fr))'
+				gridTemplateColumns={{base:'repeat(auto-fit,minmax(250px,1fr))',lg:'repeat(auto-fit,minmax(400px,1fr))'}}
 			>
 				<>{children}</>
 			</Grid>
