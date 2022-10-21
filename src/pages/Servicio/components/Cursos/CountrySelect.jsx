@@ -1,7 +1,7 @@
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { Stack, Heading, Image } from '@chakra-ui/react';
 
-const CountrySelect = ({ text, imgUrl, imgAlt }) => {
+const CountrySelect = ({ value, imgUrl, imgAlt, setSelected, id }) => {
 	return (
 		<Stack
 			borderRadius='md'
@@ -15,9 +15,10 @@ const CountrySelect = ({ text, imgUrl, imgAlt }) => {
 			h='60'
 			_hover={{ color: '#8b006c', boxShadow: 'xl' }}
 			cursor='pointer'
+			onClick={() => setSelected([{ id, value }])}
 		>
 			<Image src={imgUrl} alt={imgAlt} boxSize={{ base: '88px', md: '92px' }} />
-			<Heading fontSize='xl'>{text}</Heading>
+			<Heading fontSize='xl'>{value}</Heading>
 			<ChevronDownIcon boxSize={42} color='current' />
 		</Stack>
 	);

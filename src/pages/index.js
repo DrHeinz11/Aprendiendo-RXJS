@@ -6,7 +6,7 @@ export { default as DestinoSection } from './Destino/DestinoSection';
 export * from './Destino/components';
 export { default as Home } from './Home/Home';
 export * from './Home/components';
-export { default as Servicio } from './Servicio/components/Servicio';
+export { default as Servicio } from './Servicio/components/Cursos/CursosInCountry';
 export { default as ServicioHome } from './Servicio/ServicioHome';
 export { default as InfoVisaSection } from './WorkingHoliday/InfoVisaSection';
 export { default as WorkingHoliday } from './WorkingHoliday/WorkingHoliday';

@@ -16,7 +16,7 @@ const Benefits = () => {
 			<Heading color='primary.granate'>
 				¡Ahora es tu momento! Conocé todos los destinos
 			</Heading>
-			<CustomButtonOnly >
+			<CustomButtonOnly>
 				<Link to='/destinos/' onClick={handleScrollToTop}>
 					<Text>Comenzá tu viaje</Text>
 				</Link>
