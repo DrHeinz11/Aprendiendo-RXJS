@@ -46,7 +46,7 @@ const CtaCard = ({
 					textButton={textButton}
 					sizeButton={sizeButton}
 					signalButton={true}
-					route='/comunidad/'
+					route='/destinos/'
 				/>
 			</Grid>
 		</Box>

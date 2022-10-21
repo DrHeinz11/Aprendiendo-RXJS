@@ -10,6 +10,7 @@ const CustomContainer = ({
 	direction,
 	id,
 	signal,
+	route,
 }) => {
 	const directions = direction % 2 === 0 ? 'row' : 'row-reverse';
 	return (
@@ -46,7 +47,7 @@ const CustomContainer = ({
 						textButton={textButton}
 						signalButton={signal}
 						sizeButton={{ base: 'md', md: 'lg' }}
-						route='/working-holiday/:id'
+						route={route}
 					/>
 				)}
 			</Stack>

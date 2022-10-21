@@ -4,6 +4,7 @@ import RoutesApp from './routes/RoutesApp';
 import { BrowserRouter } from 'react-router-dom';
 import { Footer, FooterCopyright, Navbar } from './components';
 import { Divider } from '@chakra-ui/react';
+import NewsLetter from './components/Newsletter/NewsLetter';
 function App() {
 	return (
 		<BrowserRouter>
@@ -11,6 +12,7 @@ function App() {
 				<Navbar data={dataHeader} />
 				<RoutesApp />
 				<Divider />
+				<NewsLetter/>
 				<Footer />
 				<FooterCopyright />
 			</>

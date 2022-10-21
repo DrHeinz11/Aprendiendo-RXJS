@@ -20,6 +20,7 @@ const InstructionArticle = () => {
 				direction={e.id}
 				textButton={e.textButton}
 				signal={e.signal}
+				route={e.route}
 			/>
 			<Image
 				h='15rem'

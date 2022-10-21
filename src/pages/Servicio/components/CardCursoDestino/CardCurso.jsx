@@ -3,7 +3,13 @@ import { CustomButtonOnly } from '../../../../components';
 
 const CardCurso = ({ details, title }) => {
 	return (
-		<Stack alignItems={'center'} bg='#eef1f6' py='10' borderRadius='sm' boxShadow='md'>
+		<Stack
+			alignItems={'center'}
+			bg='#eef1f6'
+			py='10'
+			borderRadius='sm'
+			boxShadow='md'
+		>
 			<Heading color='#7d35c0'>{title}</Heading>
 			<Stack w='full'>
 				{details.map(elem => (

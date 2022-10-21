@@ -34,7 +34,6 @@ export const dataCursosCountry = [
 				],
 				id: 'a124',
 			},
-			
 		],
 	},
 ];

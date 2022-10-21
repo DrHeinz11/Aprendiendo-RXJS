@@ -9,6 +9,7 @@ const dataComienzaAqui = [
 			'Conocé cuales son tus opciones de destinos para viajar y trabajar por 1 año con visas Working Holiday. Lee bien en detalle los requisitos de cada país, ventajas, cuanto podés ahorrar, y elegí tu destino!',
 		textButton: 'elegí tu destino',
 		signal: true,
+		route: '/destinos/',
 	},
 	{
 		illustrationUrl:
@@ -20,6 +21,7 @@ const dataComienzaAqui = [
 			'Ahora es momento de leer cómo gestionar tu visa, la info es gratis y 100% actualizada! El viaje te lo armás vos de principio a fin. Encontrá en nuestras guías: cómo buscar trabajo, alojamiento, trámites y mucho más!',
 		textButton: '¿Que es una working holiday visa?',
 		signal: false,
+		route: '/working-holiday/visa',
 	},
 	{
 		illustrationUrl:
@@ -31,6 +33,7 @@ const dataComienzaAqui = [
 			'Te ofrecemos las mejores opciones y te asesoramos para que elijas lo mejor para tu viaje!',
 		signal: true,
 		textButton: 'nuestros servicios',
+		route: '/services/',
 	},
 	{
 		illustrationUrl:
@@ -42,6 +45,7 @@ const dataComienzaAqui = [
 			'No estás solo, hay comunidad enorme que está por irse de viaje, o que ya se fue! Sumate vos también!',
 		textButton: 'nuestras redes',
 		signal: false,
+		route: '/comunidad',
 	},
 	{
 		illustrationUrl:
@@ -53,6 +57,7 @@ const dataComienzaAqui = [
 			'Un viaje de Working Holiday es una experiencia increíble. Ya sea que tu objetivo sea seguir viajando por el mundo o volver a tu país, un viaje así te cambia la vida para siempre!',
 		textButton: '',
 		signal: false,
+		route: '/blog/',
 	},
 ];
 
