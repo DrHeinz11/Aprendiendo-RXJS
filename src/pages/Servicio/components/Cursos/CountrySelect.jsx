@@ -1,7 +1,12 @@
 import { ChevronDownIcon } from '@chakra-ui/icons';
 import { Stack, Heading, Image } from '@chakra-ui/react';
+import { handleScrollDown } from '../../../../utils';
 
 const CountrySelect = ({ value, imgUrl, imgAlt, setSelected, id }) => {
+	const handleSubmitSelect = () => {
+		setSelected({ id, value, imgUrl });
+		handleScrollDown(1000);
+	};
 	return (
 		<Stack
 			borderRadius='md'
@@ -15,7 +20,7 @@ const CountrySelect = ({ value, imgUrl, imgAlt, setSelected, id }) => {
 			h='60'
 			_hover={{ color: '#8b006c', boxShadow: 'xl' }}
 			cursor='pointer'
-			onClick={() => setSelected({ id, value, imgUrl })}
+			onClick={handleSubmitSelect}
 		>
 			<Image src={imgUrl} alt={imgAlt} boxSize={{ base: '88px', md: '92px' }} />
 			<Heading fontSize='xl'>{value}</Heading>

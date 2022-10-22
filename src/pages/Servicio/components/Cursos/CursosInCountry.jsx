@@ -1,6 +1,7 @@
-import { Box, Grid, Heading, Stack, Text } from '@chakra-ui/react';
+import { Box, filter, Grid, Heading, Stack, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { dataCursosCountry } from '../../../../constants/dataCursosCountry.data';
+import { handleScrollDown } from '../../../../utils';
 import CardCurso from '../CardCursoDestino/CardCurso';
 import CardCursoDestino from '../CardCursoDestino/CardCursoDestino';
 import CountrySelect from './CountrySelect';
@@ -42,8 +43,6 @@ const CursosInCountry = () => {
 			element => element.country === selected.value
 		);
 		setDataFilter(filtered);
-
-		console.log(filtered);
 	}, [selected]);
 
 	return (
