@@ -33,7 +33,6 @@ const ComienzaAqui = () => {
 			<MediaContainer />
 			<Divider my={5} />
 			<Carrousel />
-			<Divider my={5} />
 		</>
 	);
 };

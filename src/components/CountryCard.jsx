@@ -1,8 +1,10 @@
 import { Stack, Image, Text } from '@chakra-ui/react';
+import { handleScrollToTop } from '../utils';
 
 const CountryCard = ({ url, flagUrl, title, id }) => {
 	return (
 		<Stack
+			onClick={handleScrollToTop}
 			bg='#fff'
 			borderRadius={'3xl'}
 			boxShadow='md'

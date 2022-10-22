@@ -1,4 +1,4 @@
-import { Grid, Heading, Stack, Text } from '@chakra-ui/react';
+import { Box, Grid, Heading, Stack, Text } from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { dataCursosCountry } from '../../../../constants/dataCursosCountry.data';
 import CardCurso from '../CardCursoDestino/CardCurso';
@@ -35,13 +35,15 @@ const dataDestino = [
 ];
 const CursosInCountry = () => {
 	const [selected, setSelected] = useState('');
-	const [dataFilter, setDataFilter] = useState([]);
+	const [dataFilter, setDataFilter] = useState(null);
 
 	useEffect(() => {
 		const filtered = dataCursosCountry.filter(
 			element => element.country === selected.value
 		);
 		setDataFilter(filtered);
+
+		console.log(filtered);
 	}, [selected]);
 
 	return (
@@ -95,19 +97,27 @@ const CursosInCountry = () => {
 						imgUrl={element.imgUrl}
 						key={element.id}
 					>
-						{element.cursos.map(element => {
-							console.log(element);
-							return (
-								<CardCurso
-									key={element.id}
-									details={element.details}
-									title={element.title}
-								/>
-							);
-						})}
+						{element.cursos.length < 1 ? (
+							<Box w='container.md' margin='0 auto'>
+								<Heading mt='15' textAlign='center'>
+									En este momento no se encuentran ofertas academicas para este
+									pais
+								</Heading>
+							</Box>
+						) : (
+							element.cursos.map(element => {
+								return (
+									<CardCurso
+										key={element.id}
+										details={element.details}
+										title={element.title}
+									/>
+								);
+							})
+						)}
 					</CardCursoDestino>
 				);
-			})}{' '}
+			})}
 		</>
 	);
 };

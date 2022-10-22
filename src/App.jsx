@@ -11,7 +11,7 @@ function App() {
 			<>
 				<Navbar data={dataHeader} />
 				<RoutesApp />
-				<Divider />
+				<Divider my='5'/>
 				<NewsLetter/>
 				<Footer />
 				<FooterCopyright />

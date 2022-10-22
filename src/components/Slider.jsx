@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { dataCardCountry } from '../constants';
-import { handleScrollToTop } from '../utils';
 import CountryCard from './CountryCard';
 
 const Slider = ({ widthTransfrom }) => {
@@ -28,11 +27,7 @@ const Slider = ({ widthTransfrom }) => {
 				}}
 			>
 				{dataCardCountry.map(element => (
-					<Link
-						onClick={handleScrollToTop}
-						to={`/country/${element.title}/`}
-						key={element.id}
-					>
+					<Link to={`/country/${element.title}/`} key={element.id}>
 						<CountryCard
 							title={element.title}
 							url={element.url}
