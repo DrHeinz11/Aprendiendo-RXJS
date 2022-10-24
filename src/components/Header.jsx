@@ -1,7 +1,6 @@
 import { CustomButtomRoute } from './index';
 import { Stack, Text, Heading } from '@chakra-ui/react';
 import CustomBox from '../components/custom/CustomBox';
-import { Link } from 'react-router-dom';
 
 const Header = ({
 	background,
@@ -21,7 +20,7 @@ const Header = ({
 				width={{ base: 'full', md: '50%', lg: '34rem' }}
 				left={{ base: '0', sm: 10 }}
 				spacing={5}
-				px={4}
+				px={{ base: 4, md: 10 }}
 				position={{ base: 'inherit', md: 'absolute' }}
 				textAlign={{ base: 'center', md: 'start' }}
 				alignItems={{ base: 'center', md: 'start' }}
@@ -41,11 +40,13 @@ const Header = ({
 				>
 					{parrafo}
 				</Text>
-				<CustomButtomRoute
-					route={route}
-					alignSelf='center'
-					textButton={textButton}
-				/>
+				{textButton && (
+					<CustomButtomRoute
+						route={route}
+						alignSelf='center'
+						textButton={textButton}
+					/>
+				)}
 			</Stack>
 		</Stack>
 	);

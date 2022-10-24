@@ -11,7 +11,7 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
 			gap={4}
 			wrap={'nowrap'}
 			align='center'
-			justify={{ base: 'space-between', md: 'center' }}
+			justify={{ base: 'space-between', md: 'space-around' }}
 			px={6}
 			py={3}
 		>
