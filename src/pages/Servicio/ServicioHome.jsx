@@ -28,7 +28,7 @@ const ServicioHome = () => {
 				</Box>
 			</CustomBox>
 			<ServiceProvider>
-				<Stack className='asdasd' gap='4' mb='10' align='center'>
+				<Stack gap='4' mb='10' align='center'>
 					<CardSelected />
 					<Content />
 				</Stack>
