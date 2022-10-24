@@ -1,5 +1,5 @@
-import { Stack, Text, Box, Heading } from '@chakra-ui/react';
-import FormOption from './FormOption';
+import { Stack, Text, Box, Heading } from '@chakra-ui/react'; 
+import FormOptionRF from './FormOptionRF';
 
 const FormDescription = () => {
 	return (
@@ -10,7 +10,7 @@ const FormDescription = () => {
 			right='0'
 			width='fit-content'
 			margin='0 auto'
-			px={2}
+			px={6}
 			alignItems={'center'}
 		>
 			<Box textAlign='center' mb={4}>
@@ -22,7 +22,7 @@ const FormDescription = () => {
 					oportunidades para ti.
 				</Text>
 			</Box>
-			<FormOption />
+			<FormOptionRF />
 		</Stack>
 	);
 };

@@ -27,7 +27,7 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
 			</Link>
 			<Stack
 				direction='row'
-				spacing={8}
+				gap='3'
 				display={{ base: 'none', md: 'flex' }}
 				alignItems='center'
 				textAlign='center'

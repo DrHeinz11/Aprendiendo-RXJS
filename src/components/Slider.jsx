@@ -11,7 +11,7 @@ const Slider = ({ widthTransfrom }) => {
 	return (
 		<Box
 			ref={carruselReference}
-			w={{ base: '20rem', sm: '40rem', lg: '56rem' }}
+			w={{ base: '20rem', sm: '30rem', md: '40rem', lg: '56rem' }}
 			overflowX={{ base: 'scroll', md: 'hidden' }}
 		>
 			<Stack

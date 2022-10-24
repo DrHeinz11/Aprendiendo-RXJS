@@ -2,6 +2,7 @@ import { Box } from '@chakra-ui/react';
 import { CustomBox } from '../../components/index';
 import { FormDescription, ImageDescription } from './components';
 import { BackgroundCustomBox } from '../../constants';
+import { DestinoProvider } from './context/context';
 
 const DestinoSection = () => {
 	return (
@@ -11,8 +12,10 @@ const DestinoSection = () => {
 				sizes={{ height: { base: '125vh', md: '100vh', lg: '70vh' } }}
 				background={BackgroundCustomBox}
 			></CustomBox>
-			<FormDescription />
-			<ImageDescription />
+			<DestinoProvider>
+				<FormDescription />
+				<ImageDescription />
+			</DestinoProvider>
 		</Box>
 	);
 };

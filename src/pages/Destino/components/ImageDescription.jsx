@@ -8,13 +8,12 @@ import handleScrollDown from '../../../utils/handleScrollDown';
 const ImageDescription = () => {
 	const [data, setData] = useState([]);
 	const { destino } = useDestinoContext();
-	
+
 	const handleFilter = () => {
-		if (destino.id) {
-			const filter = dataCardCountry.filter(elem => elem.id === destino.id);
-			filter.length > 0 ? setData(filter) : setData(null);
-			filter.length > 0 ? handleScrollDown(500) : handleScrollDown(250);
-		}
+		if (!destino.id) return;
+		const filter = dataCardCountry.filter(elem => elem.id === destino.id);
+		filter.length > 0 ? setData(filter) : setData(null);
+		filter.length > 0 ? handleScrollDown(500) : handleScrollDown(250);
 	};
 
 	useEffect(() => {
