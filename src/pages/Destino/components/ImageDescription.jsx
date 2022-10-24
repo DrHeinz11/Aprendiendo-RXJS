@@ -1,10 +1,26 @@
 import { Box, Heading, Stack, Text } from '@chakra-ui/react';
 import DescriptionCard from './DescriptionCard';
-import { useDataSubscription } from '../../../hook';
+import { useDestinoContext } from '../context/context';
+import { useEffect, useState } from 'react';
+import dataCardCountry from '../../../constants/constantData/dataCardCountry';
+import handleScrollDown from '../../../utils/handleScrollDown';
 
 const ImageDescription = () => {
-	const [dataResponse] = useDataSubscription();
-	console.log(dataResponse);
+	const [data, setData] = useState([]);
+	const { destino } = useDestinoContext();
+	
+	const handleFilter = () => {
+		if (destino.id) {
+			const filter = dataCardCountry.filter(elem => elem.id === destino.id);
+			filter.length > 0 ? setData(filter) : setData(null);
+			filter.length > 0 ? handleScrollDown(500) : handleScrollDown(250);
+		}
+	};
+
+	useEffect(() => {
+		handleFilter();
+	}, [destino]);
+
 	return (
 		<Stack
 			flexWrap='wrap'
@@ -15,7 +31,20 @@ const ImageDescription = () => {
 			paddingY={10}
 			px='2'
 		>
-			{dataResponse?.map(elm => (
+			{data === null && (
+				<Heading
+					bgGradient='linear(to-l, #7928CA, #FF0080)'
+					bgClip='text'
+					fontSize='6xl'
+					fontWeight='extrabold'
+					textAlign='center'
+					my='10'
+				>
+					No hay ofertas para este pais en este momento ...
+				</Heading>
+			)}
+
+			{data?.map(elm => (
 				<Box key={elm.flagUrl}>
 					<Box textAlign='center'>
 						<Heading>Working Holiday visa en :</Heading>
