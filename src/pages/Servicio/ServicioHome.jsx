@@ -12,7 +12,7 @@ const ServicioHome = () => {
 			<CustomBox
 				background={BackgroundCustomBox}
 				align={'center'}
-				sizes={{ height: '45vh' }}
+				sizes={{ height: '50vh' }}
 			>
 				<Box textAlign='center' mb={4}>
 					<Heading

@@ -7,13 +7,16 @@ import { DestinoProvider } from './context/context';
 const DestinoSection = () => {
 	return (
 		<Box bg='#f1f1f1' minH={'100vh'} position='relative'>
-			<CustomBox
-				align={'flex-start'}
-				sizes={{ height: { base: '125vh', md: '100vh', lg: '70vh' } }}
-				background={BackgroundCustomBox}
-			></CustomBox>
 			<DestinoProvider>
-				<FormDescription />
+				<CustomBox
+					align={'center'}
+					sizes={{
+						height: { base: '45rem', sm: '40rem', md: '38rem', lg: '32rem' },
+					}}
+					background={BackgroundCustomBox}
+				>
+					<FormDescription />
+				</CustomBox>
 				<ImageDescription />
 			</DestinoProvider>
 		</Box>

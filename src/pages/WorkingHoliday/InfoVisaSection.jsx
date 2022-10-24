@@ -16,9 +16,11 @@ const InfoVisaSection = () => {
 				color='primary.darkGranate'
 				w='full'
 				bg='primary.lightAqua'
-				h={{ base: '50vh', md: '35vh' }}
+				h={{ base: '50vh', md: '55vh' }}
 			>
-				<Heading fontSize='4xl'>¿Qué es una VISA Working Holiday?</Heading>
+				<Heading px='10' fontSize='5xl'>
+					¿Qué es una VISA Working Holiday?
+				</Heading>
 			</chakra.div>
 			<HStack
 				flexWrap='wrap'
