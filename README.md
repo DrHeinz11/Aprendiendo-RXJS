@@ -1,6 +1,4 @@
-# Project Title
-
-YoMeAnimo APP
+# YoMeAnimo APP
 
 ## Demo link:
 
