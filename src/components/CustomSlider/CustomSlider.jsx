@@ -26,8 +26,14 @@ const CustomSlider = ({ children, number, title }) => {
 				alignItems='center'
 				position='relative'
 			>
-				<SliderHeader number={number} title={title} />
-				<Elipse />
+				{number && title ? (
+					<>
+						<SliderHeader number={number} title={title} />
+						<Elipse />
+					</>
+				) : (
+					''
+				)}
 				<ChevronLeftIcon
 					onClick={() => scrollMethods.scrollLeft(setActionSlide)}
 					opacity={actionSlide === 0 ? '0' : '1'}
