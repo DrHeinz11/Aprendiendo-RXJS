@@ -6,8 +6,7 @@ import {
 	Comunidad,
 	Articulos,
 	DestinoSection,
-	Servicio,
-	ServicioHome,
+	ServicioHome,ArticulosAll
 } from '../pages';
 
 import { Route, Routes } from 'react-router-dom';
@@ -23,6 +22,7 @@ const RoutesApp = () => {
 			<Route path='/working-holiday/visa' element={<InfoVisaSection />} />
 			<Route path='/comunidad/' element={<Comunidad />} />
 			<Route path='/blog/:id' element={<Articulos />} />
+			<Route path='/blog/all' element={<ArticulosAll />} />
 			<Route path='/destinos/' element={<DestinoSection />} />
 		</Routes>
 	);
