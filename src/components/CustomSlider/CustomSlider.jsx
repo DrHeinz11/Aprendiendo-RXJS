@@ -27,17 +27,21 @@ const CustomSlider = ({ children, number, title }) => {
 				position='relative'
 			>
 				<SliderHeader number={number} title={title} />
-				<Elipse/>
+				<Elipse />
 				<ChevronLeftIcon
 					onClick={() => scrollMethods.scrollLeft(setActionSlide)}
+					opacity={actionSlide === 0 ? '0' : '1'}
 					cursor='pointer'
 					width='3rem'
 					height='3rem'
 					borderRadius='full'
 					zIndex={100}
+					bg='#fff'
 					border='3px solid var(--chakra-colors-primary-darkGranate)'
 					_hover={{
 						borderColor: 'var(--chakra-colors-primary-pinkChicle)',
+						color: 'var(--chakra-colors-primary-pinkChicle)',
+						opacity: '1',
 						transition: 'all 300ms ease 0s',
 					}}
 					display={{ base: 'none', md: 'block' }}
@@ -52,6 +56,7 @@ const CustomSlider = ({ children, number, title }) => {
 					height='3rem'
 					borderRadius='full'
 					zIndex={100}
+					bg='#fff'
 					border='3px solid var(--chakra-colors-primary-darkGranate)'
 					_hover={{
 						borderColor: 'var(--chakra-colors-primary-pinkChicle)',

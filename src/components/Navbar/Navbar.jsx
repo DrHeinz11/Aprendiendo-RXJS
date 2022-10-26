@@ -47,7 +47,7 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
 				<Link className='links' to='/comunidad/'>
 					Comunidad
 				</Link>
-				<Link className='links' to='/blog/:id'>
+				<Link className='links' to='/blog/all'>
 					Artículos
 				</Link>
 			</Stack>

@@ -8,8 +8,8 @@ const Elipse = () => (
 		height='300'
 		viewBox='0 0 146 146'
 		position='absolute'
-		left='16rem'
-		zIndex={1}
+		left='13rem'
+		top='-2rem'
 	>
 		<circle
 			id='Elipse_1'
@@ -18,7 +18,6 @@ const Elipse = () => (
 			cy='73'
 			r='73'
 			fill='#ccf8f6'
-			zIndex={1}
 		/>
 	</chakra.svg>
 );

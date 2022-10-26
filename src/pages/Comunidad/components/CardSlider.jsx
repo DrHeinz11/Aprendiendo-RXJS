@@ -2,7 +2,7 @@ import { Box, Heading, Image, Stack, Text } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { handleScrollToTop } from '../../../utils';
 
-const CardSlider = ({ imgUrl, imgAlt, headTitle, title, id }) => {
+const CardSlider = ({ imgUrl, imgAlt, headTitle, title}) => {
 	return (
 		<Link to={`/blog/${imgAlt}`} onClick={handleScrollToTop}>
 			<Stack
