@@ -43,6 +43,7 @@ const HomeInfoSection = () => {
 							top='-65px'
 							left={{ base: '-5rem', md: 0 }}
 							src='https://www.yomeanimo.com/wp-content/uploads/2021/03/question-marks.svg'
+							alt='question-marks-icon'
 							w={'100px'}
 							h='100px'
 						/>

@@ -17,6 +17,7 @@ const MediaBox = () => {
 						href={element.route}
 						target={'_blank'}
 						onClick={handleScrollToTop}
+						alt={element.alt}
 					>
 						<>{element.mediaIcon({ fill: '#00DBD0', hovered: '#EC3862' })}</>
 					</Link>

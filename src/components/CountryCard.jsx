@@ -17,6 +17,7 @@ const CountryCard = ({ url, flagUrl, title, id }) => {
 				borderTopRadius={'2xl'}
 				alt={title}
 				maxWidth='none'
+				width='100%'
 				src={url}
 				height='150px'
 			/>

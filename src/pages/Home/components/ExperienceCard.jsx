@@ -9,7 +9,7 @@ const ExperienceCard = ({ props: { imgUrl, imgTitle, text } }) => {
 			justifyItems='center'
 			placeContent='center'
 		>
-			<Image src={imgUrl} alt={imgTitle} />
+			<Image boxSize='105px' src={imgUrl} alt={imgTitle} />
 			<Text>{text}</Text>
 		</Grid>
 	);
