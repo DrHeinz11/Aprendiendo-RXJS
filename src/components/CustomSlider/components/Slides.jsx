@@ -18,6 +18,7 @@ const Slides = ({ children, traslate, setWidthSlide }) => {
 			w={{ base: 'full', md: '40rem', lg: '56rem' }}
 			overflowX={{ base: 'scroll', md: 'hidden' }}
 			ref={carrouselReference}
+			zIndex={100}
 		>
 			<Stack
 				as={motion.div}

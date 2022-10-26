@@ -1,6 +1,7 @@
 import { ChevronLeftIcon, ChevronRightIcon } from '@chakra-ui/icons';
 import { Stack } from '@chakra-ui/react';
 import { useState } from 'react';
+import Elipse from '../../assets/Elipse';
 import { SliderHeader, Slides } from './components';
 
 const CustomSlider = ({ children, number, title }) => {
@@ -23,15 +24,17 @@ const CustomSlider = ({ children, number, title }) => {
 				my='10'
 				direction={{ base: 'column', md: 'row' }}
 				alignItems='center'
+				position='relative'
 			>
 				<SliderHeader number={number} title={title} />
-
+				<Elipse/>
 				<ChevronLeftIcon
 					onClick={() => scrollMethods.scrollLeft(setActionSlide)}
 					cursor='pointer'
 					width='3rem'
 					height='3rem'
 					borderRadius='full'
+					zIndex={100}
 					border='3px solid var(--chakra-colors-primary-darkGranate)'
 					_hover={{
 						borderColor: 'var(--chakra-colors-primary-pinkChicle)',
@@ -48,6 +51,7 @@ const CustomSlider = ({ children, number, title }) => {
 					width='3rem'
 					height='3rem'
 					borderRadius='full'
+					zIndex={100}
 					border='3px solid var(--chakra-colors-primary-darkGranate)'
 					_hover={{
 						borderColor: 'var(--chakra-colors-primary-pinkChicle)',
