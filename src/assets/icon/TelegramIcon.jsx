@@ -1,10 +1,11 @@
 import { chakra } from '@chakra-ui/react';
-const TelegramIcon = ({ fill, hovered }) => (
+const TelegramIcon = ({ fill, hovered,alt }) => (
 	<chakra.svg
 		xmlns='http://www.w3.org/2000/svg'
 		width={'36px'}
 		height={'36px'}
 		viewBox='0 0 24 24'
+		alt={alt}
 		_hover={{ fill: hovered, transition: 'fill 300ms ease' }}
 		fill={fill}
 	>

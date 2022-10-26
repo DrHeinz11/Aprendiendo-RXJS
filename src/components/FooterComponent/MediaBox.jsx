@@ -19,7 +19,13 @@ const MediaBox = () => {
 						onClick={handleScrollToTop}
 						alt={element.alt}
 					>
-						<>{element.mediaIcon({ fill: '#00DBD0', hovered: '#EC3862' })}</>
+						<>
+							{element.mediaIcon({
+								fill: '#00DBD0',
+								hovered: '#EC3862',
+								alt: element.alt,
+							})}
+						</>
 					</Link>
 				))}
 			</HStack>

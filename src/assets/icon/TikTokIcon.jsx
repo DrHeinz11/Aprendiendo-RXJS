@@ -1,11 +1,12 @@
 import { chakra } from '@chakra-ui/react';
 
-const TikTokIcon = ({ fill, hovered }) => (
+const TikTokIcon = ({ fill, hovered,alt }) => (
 	<chakra.svg
 		xmlns='http://www.w3.org/2000/svg'
 		width={'36px'}
 		height={'36px'}
 		viewBox='0 0 24 24'
+		alt={alt}
 		fill={fill}
 		_hover={{ fill: hovered, transition: 'fill 300ms ease' }}
 	>

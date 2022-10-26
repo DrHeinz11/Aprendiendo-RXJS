@@ -23,6 +23,8 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
 					_hover={{ opacity: 0.7, trasition: 'opacity 300ms' }}
 					size={'md'}
 					minW='120px'
+					w='full'
+					maxW='160px'
 				/>
 			</Link>
 			<Stack
