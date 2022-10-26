@@ -7,6 +7,7 @@ const NewsLetter = () => {
 		<Stack
 			spacing={4}
 			justifyContent='center'
+			alignItems='center'
 			textAlign='center'
 			w='full'
 			h={{ base: 'auto', lg: 'xs' }}

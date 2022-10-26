@@ -45,7 +45,7 @@ const ImageDescription = () => {
 
 			{data?.map(elm => (
 				<Box key={elm.flagUrl}>
-					<Box textAlign='center'>
+					<Box textAlign='center' my='4'>
 						<Heading>Working Holiday visa en :</Heading>
 						<Text
 							bgGradient='linear(to-l, #7928CA, #FF0080)'

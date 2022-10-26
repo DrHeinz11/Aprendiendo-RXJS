@@ -1,12 +1,12 @@
-import { chakra } from '@chakra-ui/react';
+import { chakra, HStack } from '@chakra-ui/react';
 const NewsForm = () => {
 	const handleSubmit = event => {
 		event.preventDefault();
 	};
 	return (
-		<chakra.form
-			display='flex'
-			direction='row'
+		<HStack
+			as='form'
+			maxW={{ base: '90%', md: '80%' }}
 			alignItems='center'
 			justifyContent='center'
 			flexWrap='wrap'
@@ -15,6 +15,8 @@ const NewsForm = () => {
 			onSubmit={event => handleSubmit(event)}
 		>
 			<chakra.input
+				flex='1'
+				ml='8px'
 				minW='300px'
 				p='4'
 				borderRadius='xl'
@@ -29,6 +31,7 @@ const NewsForm = () => {
 				_focusVisible={{ outline: 0 }}
 			/>
 			<chakra.input
+				flex='1'
 				minW='300px'
 				p='4'
 				h='fit-content'
@@ -44,6 +47,7 @@ const NewsForm = () => {
 				_focusVisible={{ outline: 0 }}
 			/>
 			<chakra.select
+				flex='1'
 				cursor='pointer'
 				h='fit-content'
 				fontSize='md'
@@ -67,6 +71,7 @@ const NewsForm = () => {
 				</chakra.option>
 			</chakra.select>
 			<chakra.button
+				flex='1'
 				bg='primary.pinkChicle'
 				_hover={{ bg: '#d40031' }}
 				px='10'
@@ -81,7 +86,7 @@ const NewsForm = () => {
 			>
 				Subscribe!
 			</chakra.button>
-		</chakra.form>
+		</HStack>
 	);
 };
 
