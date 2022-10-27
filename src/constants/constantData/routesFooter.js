@@ -5,6 +5,7 @@ const routeFooter = [
 			{ route: '/comienza-aqui/', routeName: 'comienza Aqui', key: 1 },
 			{ route: '/about-us/', routeName: 'Quienes somos', key: 2 },
 			{ route: '/services/', routeName: 'Contactate con nosotros', key: 3 },
+			{ route: '/comunidad/', routeName: 'Comunidad YoMeAnimers!', key: 4 },
 		],
 	},
 	{

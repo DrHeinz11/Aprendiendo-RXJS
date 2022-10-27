@@ -1,6 +1,5 @@
 import { Stack, Image, Box } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
-import data from '../../constants/constantData/dataCardCountry';
 import HamburgerMenu from './HamburgerMenu';
 import SearchBar from './SearchBar';
 
@@ -54,7 +53,7 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
 				</Link>
 			</Stack>
 			<SearchBar />
-			<Box display={{ base: 'block', md: 'none' }}>
+			<Box display={{ base: 'block', md: 'none' }} overflowX='hidden'>
 				<HamburgerMenu />
 			</Box>
 		</Stack>
