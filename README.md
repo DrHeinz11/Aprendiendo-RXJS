@@ -35,19 +35,15 @@ It has personalized services, newsletters, blogs and community.
 
 ![screenshot-yomeanimo-chakra netlify app-2022 10 25-23_23_01](https://user-images.githubusercontent.com/96245472/197923493-9d90e23a-1e40-410d-953f-2dcef40048fc.png)
 
-
 ## Mobile View
 
 #### Travel Section
 
 ![screenshot-yomeanimo-chakra netlify app-2022 10 25-23_47_10](https://user-images.githubusercontent.com/96245472/197924132-0f5f4243-7e9e-495c-a5fd-e7ebe576bad2.png)
 
-
 #### Infomation Page
 
 ![screenshot-yomeanimo-chakra netlify app-2022 10 25-23_57_25](https://user-images.githubusercontent.com/96245472/197924255-1b15acca-7ec3-463b-983b-80b28527bd94.png)
-
-
 
 ## Technologies
 

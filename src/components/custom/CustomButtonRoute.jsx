@@ -12,9 +12,9 @@ const CustomButtomRoute = ({ textButton, signalButton, sizeButton, route }) => {
 				borderRadius='xl'
 				w='fit-content'
 				textTransform='initial'
-				fontSize={{ base: 'lg', md: 'xl' }}
-				py={6}
-				px={10}
+				fontSize={{ base: 'lg', md: 'xl', '2xl': '2xl' }}
+				py={{ base: '6', '2xl': '2rem' }}
+				px={{ base: '10', '2xl': '4rem' }}
 			>
 				{textoButton}
 			</Button>

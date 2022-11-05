@@ -1,6 +1,6 @@
 import { chakra } from '@chakra-ui/react';
 
-const FacebookIcon = ({ fill, hovered,alt }) => (
+const FacebookIcon = ({ fill, hovered, alt }) => (
 	<chakra.svg
 		xmlns='http://www.w3.org/2000/svg'
 		width={'36px'}

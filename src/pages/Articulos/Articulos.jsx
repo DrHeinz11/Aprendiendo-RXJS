@@ -34,7 +34,9 @@ const Articulos = () => {
 							{element.title}
 						</Heading>
 						{element.description.map((element, index) => (
-							<Text mb='1' key={index + element}>{element}</Text>
+							<Text mb='1' key={index + element}>
+								{element}
+							</Text>
 						))}
 					</Box>
 					<Box>
@@ -42,7 +44,9 @@ const Articulos = () => {
 							{element.titleArticle}
 						</Heading>
 						{element.paragraphArticle.map((element, index) => (
-							<Text mb='1' key={index + element}>{element}</Text>
+							<Text mb='1' key={index + element}>
+								{element}
+							</Text>
 						))}
 					</Box>
 				</HStack>

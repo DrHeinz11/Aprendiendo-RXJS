@@ -1,9 +1,7 @@
-import React from 'react'
+import React from 'react';
 
 const ArticulosAll = () => {
-  return (
-    <div>ArticulosAll</div>
-  )
-}
+	return <div>ArticulosAll</div>;
+};
 
-export default ArticulosAll
+export default ArticulosAll;
