@@ -11,7 +11,7 @@ const DestinoSection = () => {
 				<CustomBox
 					align={'center'}
 					sizes={{
-						height: { base: '45rem', sm: '40rem', md: '38rem', lg: '32rem' },
+						height: { base: '50rem', sm: '40rem', md: '38rem', lg: '32rem' },
 					}}
 					background={BackgroundCustomBox}
 				>

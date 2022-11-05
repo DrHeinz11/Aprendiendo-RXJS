@@ -13,16 +13,24 @@ const DescriptionCard = ({ subInfo, flagUrl, title, url, info }) => {
 	const handleToggle = () => setShow(!show);
 	return (
 		<Stack
+			w='full'
 			bg='#efefef'
 			direction='row'
 			alignItems='center'
+			justifyContent='space-around'
 			gap={5}
 			wrap='wrap'
 			p={{ base: 4, md: 10 }}
 			borderRadius='md'
 			boxShadow='md'
 		>
-			<Stack direction='column' w={{ base: 'full', md: 'md' }}>
+			<Stack
+				direction='column'
+				alignItems='center'
+				justifyContent={'center'}
+				gap='4'
+				w={{ base: 'full', md: 'md' }}
+			>
 				<Stack direction='row' spacing={22} align='center'>
 					<Image
 						objectFit='cover'
@@ -32,11 +40,12 @@ const DescriptionCard = ({ subInfo, flagUrl, title, url, info }) => {
 					/>
 					<Heading>{title}</Heading>
 				</Stack>
-				<Image maxW='448px' src={url} />
+				<Image maxW='440px' w='inherit' src={url} />
 			</Stack>
-			<Stack gap='2' w={{ base: 'full', md: 'md' }}>
+
+			<Stack gap='2' margin='0 !important' w={{ base: 'full', md: 'md' }}>
 				<Collapse startingHeight={105} in={show}>
-					<Text fontSize='lg' fontWeight='medium'>
+					<Text fontSize={{ base: 'md', md: 'lg' }} fontWeight='medium'>
 						{info}
 					</Text>
 					<Text fontSize='md'>{subInfo}</Text>

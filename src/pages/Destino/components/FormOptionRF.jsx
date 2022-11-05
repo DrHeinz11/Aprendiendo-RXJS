@@ -97,6 +97,8 @@ const FormOptionRF = () => {
 			</HStack>
 
 			<Button
+				flex='1'
+				flexBasis='145px'
 				type='submit'
 				size='lg'
 				bg='primary.pinkChicle'

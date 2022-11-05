@@ -44,13 +44,15 @@ const ImageDescription = () => {
 			)}
 
 			{data?.map(elm => (
-				<Box key={elm.flagUrl}>
-					<Box textAlign='center' my='4'>
-						<Heading>Working Holiday visa en :</Heading>
+				<Box key={elm.flagUrl} w='full'>
+					<Box textAlign='center' my='4' w='full'>
+						<Heading fontSize={{ base: 'xl', md: '4xl' }}>
+							Working Holiday visa en :
+						</Heading>
 						<Text
 							bgGradient='linear(to-l, #7928CA, #FF0080)'
 							bgClip='text'
-							fontSize='6xl'
+							fontSize={{ base: '4xl', md: '6xl' }}
 							fontWeight='extrabold'
 						>
 							{elm.title}
