@@ -18,7 +18,7 @@ const InfoVisaSection = () => {
 				bg='primary.lightAqua'
 				h={{ base: '50vh', md: '55vh' }}
 			>
-				<Heading px='10' fontSize='5xl'>
+				<Heading px='10' fontSize={{ base: '3xl', md: '5xl' }}>
 					¿Qué es una VISA Working Holiday?
 				</Heading>
 			</chakra.div>

@@ -12,12 +12,12 @@ const NewsForm = () => {
 			flexWrap='wrap'
 			gap='4'
 			zIndex='100'
+			spacing='none'
 			onSubmit={event => handleSubmit(event)}
 		>
 			<chakra.input
 				flex='1'
-				ml='8px'
-				minW='300px'
+				minW={{ base: 'none', sm: '300px' }}
 				p='4'
 				borderRadius='xl'
 				bg='#fafafa'
@@ -32,7 +32,7 @@ const NewsForm = () => {
 			/>
 			<chakra.input
 				flex='1'
-				minW='300px'
+				minW={{ base: 'none', sm: '300px' }}
 				p='4'
 				h='fit-content'
 				borderRadius='xl'
@@ -52,7 +52,7 @@ const NewsForm = () => {
 				h='fit-content'
 				fontSize='md'
 				fontWeight='bold'
-				px='6'
+				px='4'
 				py='4'
 				borderRadius='xl'
 				_focusVisible={{ outline: 0 }}

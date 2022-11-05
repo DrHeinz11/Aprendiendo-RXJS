@@ -36,12 +36,14 @@ const CtaCard = ({
 					lg: '55rem',
 					xl: '65rem',
 				}}
-				height={{ base: '50vh', lg: '40vh' }}
+				height={{ base: '60vh', sm: '50vh', lg: '40vh' }}
 				bg='rgba(0,0,0,.15)'
 				textAlign='center'
 			>
-				<Heading color='#000'>{heading}</Heading>
-				<Heading color='#000'>{subHeading}</Heading>
+				<Box>
+					<Heading color='#000'>{heading}</Heading>
+					<Heading color='#000'>{subHeading}</Heading>
+				</Box>
 				<CustomButtomRoute
 					textButton={textButton}
 					sizeButton={sizeButton}

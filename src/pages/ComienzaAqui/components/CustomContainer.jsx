@@ -23,11 +23,22 @@ const CustomContainer = ({
 			px={2}
 			align='center'
 		>
-			<Image src={illustrationUrl} alt={illustrationName} px={12} />
-			<Stack spacing={5} alignItems={{ base: 'center', md: 'auto' }}>
+			<Image
+				src={illustrationUrl}
+				alt={illustrationName}
+				boxSize={{
+					base: '16rem',
+					sm: '18rem',
+					md: '20rem',
+					lg: '22rem',
+					xl: '26rem',
+				}}
+			/>
+			<Stack spacing='none' gap='5' alignItems={{ base: 'center', md: 'auto' }}>
 				<Heading
 					display='flex'
 					gap={2}
+					flexWrap='wrap'
 					alignItems='stretch'
 					color='primary.darkGranate'
 					fontSize='3xl'

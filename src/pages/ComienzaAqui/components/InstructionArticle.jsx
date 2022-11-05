@@ -7,7 +7,7 @@ const InstructionArticle = () => {
 	return dataComienzaAqui.map((e, index) => (
 		<Stack
 			flexWrap='wrap'
-			px={{ base: 4, md: 0 }}
+			px={{ base: 1, md: 0 }}
 			align='center'
 			key={e.illustrationName + index}
 		>

@@ -12,7 +12,7 @@ const MediaContainer = () => {
 			</Heading>
 			<Box>
 				<chakra.iframe
-					width={{ base: '360px', md: '550px', lg: '780px' }}
+					width={{ base: '300px', sm: '360px', md: '550px', lg: '780px' }}
 					height={{ base: '315px', md: '400px', lg: '400px' }}
 					src='https://www.youtube.com/embed/vorY9e0yoIQ'
 					title='YouTube video player'

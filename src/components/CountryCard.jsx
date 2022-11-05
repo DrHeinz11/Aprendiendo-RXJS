@@ -16,6 +16,7 @@ const CountryCard = ({ url, flagUrl, title, id }) => {
 			<Image
 				borderTopRadius={'2xl'}
 				alt={title}
+				sx={{ aspectRatio: '1/1' }}
 				maxWidth='none'
 				width='100%'
 				src={url}

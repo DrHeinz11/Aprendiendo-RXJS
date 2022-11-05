@@ -8,14 +8,19 @@ const InfoBox = ({ imgUrl, imgAlt, heading, paragraph, id }) => {
 			w='full'
 			height='full'
 			align='center'
-			p='4'
+			p={{ base: 2, sm: 4 }}
 			maxW='450px'
-			gap='2'
+			gap={{ base: 4, sm: 2 }}
 			textAlign={{ base: 'center', lg: 'start' }}
 		>
-			<Image boxSize='16rem' objectFit='fill' src={imgUrl} alt={imgAlt} />
+			<Image
+				boxSize={{ base: '12rem', sm: '16rem' }}
+				objectFit='fill'
+				src={imgUrl}
+				alt={imgAlt}
+			/>
 			<Box color='primary.darkGranate'>
-				<Heading fontSize='3xl' mb='4'>
+				<Heading fontSize={{ base: 'xl', md: '3xl' }} mb='4'>
 					{heading}
 				</Heading>
 				<Text fontSize='md' fontWeight={'medium'}>

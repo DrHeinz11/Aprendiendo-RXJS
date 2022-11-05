@@ -9,7 +9,11 @@ const HeadingSection = () => {
 			width={{ base: 'full', md: 'container.lg' }}
 		>
 			<Box textAlign='start' color='primary.granate'>
-				<Heading pr={{ base: 0, md: 20 }} fontSize='5xl' mb='4'>
+				<Heading
+					pr={{ base: 0, md: 20 }}
+					fontSize={{ base: '3xl', md: '5xl' }}
+					mb='4'
+				>
 					Animate a viajar y trabajar en el exterior
 				</Heading>
 				<Text fontWeight='medium'>

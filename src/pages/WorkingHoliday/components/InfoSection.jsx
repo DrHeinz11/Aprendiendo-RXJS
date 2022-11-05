@@ -71,13 +71,17 @@ const InfoSection = () => {
 			height={'auto'}
 			alignItems={'center'}
 			justifyItems={'center'}
+			gap={{ base: 4, md: 0 }}
 		>
 			<Box
 				px={{ base: 0, md: 10 }}
 				area={'box-0'}
 				textAlign={{ base: 'center', sm: 'start' }}
 			>
-				<Heading fontSize='4xl' color={'primary.pinkChicle'}>
+				<Heading
+					fontSize={{ base: '2xl', md: '4xl' }}
+					color={'primary.pinkChicle'}
+				>
 					Las características más importantes que debés saber
 				</Heading>
 			</Box>
