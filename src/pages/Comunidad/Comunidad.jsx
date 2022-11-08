@@ -8,7 +8,7 @@ const Comunidad = () => {
 	return (
 		<Box bg='#f1f1f1' minH='100vh'>
 			<HeaderComunidad />
-			<Stack py='20' px='10' gap='14'>
+			<Stack py='20' px={{ base: '2', sm: '4', md: 10 }} gap='14'>
 				{dataComunity?.map(element => (
 					<CustomSlider
 						key={element.number}

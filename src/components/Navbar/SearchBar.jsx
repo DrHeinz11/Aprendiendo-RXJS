@@ -8,6 +8,7 @@ const SearchBar = () => {
 	const [toggleSearchBar, setToggleSearchBar] = useState(false);
 
 	const searchBarSubscription$ = sharingSearchInfo.getSearchSubject();
+
 	useEffect(() => {
 		searchBarSubscription$.subscribe(data => setSelectedKeyboard(data));
 	}, []);

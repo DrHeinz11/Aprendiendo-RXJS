@@ -1,4 +1,3 @@
-import NotFound404 from './components/NotFound404';
 import { Route, Routes } from 'react-router-dom';
 import { lazy } from 'react';
 
@@ -13,6 +12,7 @@ const DestinoSection = lazy(() => import('../pages/Destino/DestinoSection'));
 const Articulos = lazy(() => import('../pages/Articulos/Articulos'));
 const ArticulosAll = lazy(() => import('../pages/Articulos/ArticulosAll'));
 const ServicioHome = lazy(() => import('../pages/Servicio/ServicioHome'));
+const NotFound404 = lazy(() => import('./components/NotFound404'));
 
 const RoutesApp = () => {
 	return (

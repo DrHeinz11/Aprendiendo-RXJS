@@ -11,6 +11,7 @@ const HeaderComunidad = () => {
 				}}
 				sizes={{ height: { base: '50vh' } }}
 			/>
+
 			<Stack
 				maxWidth='1000px'
 				margin='0 auto'
@@ -23,11 +24,11 @@ const HeaderComunidad = () => {
 				<Heading
 					lineHeight='1.15'
 					px='10'
-					fontSize={{ base: '4xl', md: '5xl' }}
+					fontSize={{ base: '3xl', sm: '4xl', md: '5xl' }}
 				>
 					Viajero Tips de la comunidad
 				</Heading>
-				<Text fontSize={{ base: 'lg', md: 'lg', lg: 'xl' }} fontWeight='500'>
+				<Text fontSize={{ base: 'md', sm: 'lg', lg: 'xl' }} fontWeight='500'>
 					Los mejores tips de miles de Yomeanimers que te ayudara a que tu viaje
 					sea inolvidable!
 				</Text>
