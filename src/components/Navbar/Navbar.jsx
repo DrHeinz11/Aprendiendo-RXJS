@@ -6,6 +6,7 @@ import SearchBar from './SearchBar';
 const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
 	return (
 		<Stack
+		as='header'
 			direction='row'
 			gap={4}
 			wrap={'nowrap'}
@@ -27,6 +28,7 @@ const Navbar = ({ data: { imgUrl, imgAlt, imgKey } }) => {
 				/>
 			</Link>
 			<Stack
+			as='nav'
 				direction='row'
 				gap='3'
 				display={{ base: 'none', md: 'flex' }}

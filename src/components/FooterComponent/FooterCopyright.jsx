@@ -36,15 +36,17 @@ const FooterCopyright = () => {
 				</Text>
 			</Stack>
 			<Divider />
-			<HStack spacing={10} wrap={'wrap'} justifyContent='center' py={5}>
-				<Link to={'/'}>Terminos de uso</Link>
-				<Link to={'/'}>Politica de privacidad</Link>
-			</HStack>
-			<Divider />
-			<Text textAlign='center' p={3} fontSize={'xs'} color='blackAlpha.600'>
-				©FrancMartin 2022 - YoMeAnimo! CLONE. Todos los derechos reservados y
-				atribuidos a los dueños de esta marca. MVS Argentina SRL.
-			</Text>
+			<footer>
+				<HStack as='nav' spacing={10} wrap={'wrap'} justifyContent='center' py={5}>
+					<Link to={'/'}>Terminos de uso</Link>
+					<Link to={'/'}>Politica de privacidad</Link>
+				</HStack>
+				<Divider />
+				<Text textAlign='center' p={3} fontSize={'xs'} color='blackAlpha.600'>
+					©FrancMartin 2022 - YoMeAnimo! CLONE. Todos los derechos reservados y
+					atribuidos a los dueños de esta marca. MVS Argentina SRL.
+				</Text>
+			</footer>
 		</>
 	);
 };

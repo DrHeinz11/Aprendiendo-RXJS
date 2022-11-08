@@ -21,12 +21,12 @@ const Home = () => {
 				textColor='primary.darkGranate'
 				route='/comienza-aqui/'
 			/>
-			<Stack px={0} gap={8} marginTop={8}>
-				<StackDivider />
+			<Stack as='main' px={0} gap={8} marginTop={8}>
+				<StackDivider as='divider' h='1px' bg='blackAlpha.200' w='full' />
 				<CountrySection />
-				<StackDivider />
+				<StackDivider as='divider' h='1px' bg='blackAlpha.200' w='full' />
 				<ExperienceSection />
-				<StackDivider />
+				<StackDivider as='divider' h='1px' bg='blackAlpha.200' w='full' />
 				<HomeInfoSection />
 				{/* <PromotionCard />
 						<BlogSection />

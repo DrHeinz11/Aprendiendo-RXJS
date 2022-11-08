@@ -5,7 +5,7 @@ import CustomButtomRoute from '../../../components/custom/CustomButtonRoute';
 const CountrySection = () => {
 	return (
 		<>
-			<Stack
+			<Stack as='section'
 				direction='column'
 				spacing={4}
 				align='center'

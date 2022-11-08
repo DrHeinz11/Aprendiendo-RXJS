@@ -5,6 +5,7 @@ import dataCard from '../../../constants/constantData/dataCard';
 const HomeInfoSection = () => {
 	return (
 		<Box
+			as='section'
 			bgImage="url('https://www.yomeanimo.com/wp-content/themes/creativedog-timber-theme-v2/assets/images/_Tramas/general-trama-thunder.svg')"
 			bgPosition='center'
 			bgSize='cover'

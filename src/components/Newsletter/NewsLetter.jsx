@@ -5,6 +5,7 @@ import NewsForm from './NewsForm';
 const NewsLetter = () => {
 	return (
 		<Stack
+		as='section'
 			spacing={4}
 			justifyContent='center'
 			alignItems='center'

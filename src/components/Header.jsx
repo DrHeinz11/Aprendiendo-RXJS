@@ -11,7 +11,7 @@ const Header = ({
 	route,
 }) => {
 	return (
-		<Stack positon='column' justify='center'>
+		<Stack as='header' positon='column' justify='center'>
 			<CustomBox
 				background={background}
 				sizes={{ height: { base: '55vh', md: '90vh', lg: '100vh' } }}
@@ -26,6 +26,7 @@ const Header = ({
 				alignItems={{ base: 'center', md: 'start' }}
 			>
 				<Heading
+				as='h1'
 					lineHeight='1.15'
 					fontSize={{ base: '2xl', md: '4xl', '2xl': '5xl' }}
 					color={{ base: 'primary.darkGranate', md: textColor }}

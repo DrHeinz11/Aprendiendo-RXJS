@@ -18,7 +18,7 @@ const SearchBar = () => {
 	};
 
 	return (
-		<Stack direction='row' align='center' p={2}>
+		<Stack as='nav' direction='row' align='center' p={2}>
 			<Search2Icon boxSize='1.25rem' onClick={handleToggleSearchBar} />
 			{toggleSearchBar && (
 				<SearchInput setToggleSearchBar={setToggleSearchBar} />
