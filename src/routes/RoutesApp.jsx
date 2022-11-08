@@ -6,9 +6,7 @@ const Home = lazy(() => import('../pages/Home/Home'));
 const InfoVisaSection = lazy(() =>
 	import('../pages/WorkingHoliday/InfoVisaSection')
 );
-const WorkingHoliday = lazy(() =>
-	import('../pages/WorkingHoliday/WorkingHoliday')
-);
+const CountrySelected = lazy(() => import('../pages/Country/CountrySelected'));
 const ComienzaAqui = lazy(() => import('../pages/ComienzaAqui/ComienzaAqui'));
 const Comunidad = lazy(() => import('../pages/Comunidad/Comunidad'));
 const DestinoSection = lazy(() => import('../pages/Destino/DestinoSection'));
@@ -21,7 +19,7 @@ const RoutesApp = () => {
 		<Routes>
 			<Route exact path='/' element={<Home />} />
 			<Route path='*' element={<NotFound404 />} />
-			<Route path='/country/:id' element={<WorkingHoliday />} />
+			<Route path='/country/:id' element={<CountrySelected />} />
 			<Route path='/comienza-aqui/' element={<ComienzaAqui />} />
 			<Route path='/services/' element={<ServicioHome />} />
 			<Route path='/working-holiday/visa' element={<InfoVisaSection />} />
