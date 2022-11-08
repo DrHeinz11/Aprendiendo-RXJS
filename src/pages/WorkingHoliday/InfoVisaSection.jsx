@@ -6,7 +6,7 @@ import Benefits from './components/Benefits';
 
 const InfoVisaSection = () => {
 	return (
-		<Stack minH='100vh' bg='#f8f8f8' gap='10'>
+		<Stack as='main' minH='100vh' bg='#f8f8f8' gap='10'>
 			<chakra.div
 				className='box'
 				as={Stack}

@@ -5,6 +5,7 @@ import CardService from './CardService';
 const CardSelected = () => {
 	return (
 		<HStack
+			as='article'
 			justify='center'
 			flexWrap='wrap-reverse'
 			gap='2'

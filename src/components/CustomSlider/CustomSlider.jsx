@@ -20,6 +20,7 @@ const CustomSlider = ({ children, number, title }) => {
 	return (
 		<>
 			<Stack
+				as='article'
 				px={{ base: 0, md: 4 }}
 				my='10'
 				direction={{ base: 'column', md: 'row' }}

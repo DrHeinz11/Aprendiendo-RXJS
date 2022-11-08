@@ -8,7 +8,7 @@ import { ServiceProvider } from './context/context';
 const ServicioHome = () => {
 	const { id } = useParams();
 	return (
-		<>
+		<main>
 			<CustomBox
 				background={BackgroundCustomBox}
 				align={'center'}
@@ -28,12 +28,12 @@ const ServicioHome = () => {
 				</Box>
 			</CustomBox>
 			<ServiceProvider>
-				<Stack gap='4' mb='10' align='center'>
+				<Stack as='section' gap='4' mb='10' align='center'>
 					<CardSelected />
 					<Content />
 				</Stack>
 			</ServiceProvider>
-		</>
+		</main>
 	);
 };
 

@@ -8,7 +8,7 @@ const ComienzaAqui = () => {
 		md: 'https://www.yomeanimo.com/wp-content/themes/creativedog-timber-theme-v2/assets/images/_Tramas/general-trama-thunder-plane-dots.svg',
 	};
 	return (
-		<>
+		<section>
 			<Header
 				background={{
 					md: '	https://www.yomeanimo.com/wp-content/uploads/2022/01/Prueba2-1.jpg',
@@ -33,7 +33,7 @@ const ComienzaAqui = () => {
 			<MediaContainer />
 			<Divider my={5} />
 			<Carrousel />
-		</>
+		</section>
 	);
 };
 

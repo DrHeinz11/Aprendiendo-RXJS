@@ -3,6 +3,7 @@ import { Image, Heading, Text, Box, Stack } from '@chakra-ui/react';
 const InfoBox = ({ imgUrl, imgAlt, heading, paragraph, id }) => {
 	return (
 		<Stack
+			as='article'
 			area={{ base: 'none', md: `box-${id}` }}
 			margin='0 !important'
 			w='full'

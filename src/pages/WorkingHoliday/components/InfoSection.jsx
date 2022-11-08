@@ -65,6 +65,7 @@ const GridAreasMD = `"box-0 box-1"
 const InfoSection = () => {
 	return (
 		<Grid
+		as='section'
 			gridTemplateColumns={{ md: '1fr 1fr', lg: '1fr 0.5fr 1fr' }}
 			gridTemplateAreas={{ base: 'none', md: GridAreasMD, lg: GridAreas }}
 			w='full'

@@ -6,6 +6,7 @@ import { dataComienzaAqui } from '../../../constants/';
 const InstructionArticle = () => {
 	return dataComienzaAqui.map((e, index) => (
 		<Stack
+			as='article'
 			flexWrap='wrap'
 			px={{ base: 1, md: 0 }}
 			align='center'
