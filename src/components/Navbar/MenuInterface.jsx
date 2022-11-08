@@ -1,5 +1,6 @@
 import { Box, Stack } from '@chakra-ui/react';
 import { CloseIcon } from '@chakra-ui/icons';
+import { Link } from 'react-router-dom';
 
 const MenuInterface = ({ setToggleMenu }) => {
 	const handleToggleMenu = () => setToggleMenu(prev => !prev);
@@ -25,19 +26,51 @@ const MenuInterface = ({ setToggleMenu }) => {
 				zIndex='modal'
 				position='absolute'
 				top='0'
+				left='0'
+				gap='5'
+				px='4'
+				bg='#fafafa'
+				justify='center'
+				h='100vh'
 			>
-				<Box>
+				<Box
+					position='absolute'
+					color='white'
+					bg='primary.pinkChicle'
+					p='2'
+					top='6'
+					right='6'
+					borderRadius='sm'
+				>
 					<CloseIcon
-						position='relative'
-						top='7'
 						alignSelf='left'
 						boxSize='20px'
 						onClick={handleToggleMenu}
 					/>
-					{/* {menuOptions.map((element) => (
-            <OptionMenu props={element} />
-        ))} */}
 				</Box>
+
+				<Link onClick={handleToggleMenu} className='links' to='/comienza-aqui/'>
+					Comienza aquí
+				</Link>
+				<Link
+					onClick={handleToggleMenu}
+					className='links'
+					to='/working-holiday/visa'
+				>
+					Working Holiday
+				</Link>
+				<Link onClick={handleToggleMenu} className='links' to='/destinos/'>
+					Destinos
+				</Link>
+				<Link onClick={handleToggleMenu} className='links' to='/services/'>
+					Servicios
+				</Link>
+				<Link onClick={handleToggleMenu} className='links' to='/comunidad/'>
+					Comunidad
+				</Link>
+				<Link onClick={handleToggleMenu} className='links' to='/blog/all'>
+					Artículos
+				</Link>
 			</Stack>
 		</>
 	);
