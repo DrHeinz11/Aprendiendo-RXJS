@@ -28,7 +28,7 @@ const CardSlider = ({ imgUrl, imgAlt, headTitle, title }) => {
 					margin='0 !important'
 					flex='1'
 				>
-					<Text textTransform='uppercase' fontWeight='light' fontSize='sm'>
+					<Text borderRadius='sm' bg='whiteAlpha.100' w='fit-content' px='2' textTransform='uppercase' fontWeight='light' fontSize='sm'>
 						{headTitle}
 					</Text>
 					<Heading

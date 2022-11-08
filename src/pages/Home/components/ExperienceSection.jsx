@@ -1,5 +1,5 @@
 import { Grid, Text, Heading, Stack } from '@chakra-ui/react';
-import { CustomButtomRoute } from '../../../components/index';
+import CustomButtomRoute from '../../../components/custom/CustomButtonRoute';
 import { experienceWK } from '../../../constants/';
 import ExperienceCard from './ExperienceCard';
 const ExperienceSection = () => {

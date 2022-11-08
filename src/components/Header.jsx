@@ -1,4 +1,4 @@
-import { CustomButtomRoute } from './index';
+import CustomButtomRoute from './custom/CustomButtonRoute'
 import { Stack, Text, Heading } from '@chakra-ui/react';
 import CustomBox from '../components/custom/CustomBox';
 

@@ -1,5 +1,5 @@
 import { Heading, Stack, Image, Text, chakra } from '@chakra-ui/react';
-import { CustomButtomRoute } from '../../../components';
+import CustomButtomRoute  from '../../../components/custom/CustomButtonRoute';
 
 const CustomContainer = ({
 	illustrationUrl,

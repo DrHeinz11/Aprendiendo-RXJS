@@ -1,7 +1,8 @@
-import { CustomButtomRoute, CountryCard } from './index';
 import { Link } from 'react-router-dom';
 import { Stack, Box, Heading } from '@chakra-ui/react';
 import { dataCardCountry } from '../constants/constantData';
+import CountryCard from './CountryCard';
+import CustomButtomRoute from './custom/CustomButtonRoute';
 
 const CountrySlider = () => {
 	const arrSliced = dataCardCountry.slice(0, 8);
