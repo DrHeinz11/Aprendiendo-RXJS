@@ -1,9 +1,20 @@
-import { Box, filter, Grid, Heading, Stack, Text } from '@chakra-ui/react';
+import {
+	Box,
+	filter,
+	Grid,
+	Heading,
+	HStack,
+	Image,
+	Stack,
+	Text,
+} from '@chakra-ui/react';
 import { useEffect, useState } from 'react';
 import { dataCursosCountry } from '../../../../constants/dataCursosCountry.data';
 import { handleScrollDown } from '../../../../utils';
 import CardCurso from '../CardCursoDestino/CardCurso';
 import CardCursoDestino from '../CardCursoDestino/CardCursoDestino';
+import CourseHeading from './components/CourseHeading';
+import CourseNotFound from './components/CourseNotFound';
 import CountrySelect from './CountrySelect';
 const dataDestino = [
 	{
@@ -54,17 +65,7 @@ const CursosInCountry = () => {
 				textAlign={{ base: 'center', md: 'start' }}
 				w={{ base: 'full', lg: 'container.lg' }}
 			>
-				<Heading color='primary.darkGranate'>
-					Estudia y trabaja en el exterior
-				</Heading>
-				<Text px={{ base: '4', md: '10' }} mt='4' fontSize='xl'>
-					¿Estás interesado en ir a estudiar afuera, ya sea a perfeccionar el
-					idioma o hacer algún diplomado?. Las visas de estudiantes tienen la
-					ventaja de que se pueden obtener en cualquier momento del año, no
-					tienen límite de edad, o los habilitan a trabajar legalmente en el
-					país!
-				</Text>
-
+				<CourseHeading />
 				<Stack alignItems='center' w='full'>
 					<Heading>Elegí tu destino</Heading>
 					<Grid
@@ -90,30 +91,26 @@ const CursosInCountry = () => {
 				</Stack>
 			</Stack>
 			{dataFilter?.map(element => {
+				{
+					if (element.cursos.length <= 0)
+						return (
+							<CourseNotFound imgUrl={element.imgUrl} alt={element.heading} />
+						);
+				}
+
 				return (
 					<CardCursoDestino
 						heading={element.heading}
 						imgUrl={element.imgUrl}
 						key={element.id}
 					>
-						{element.cursos.length < 1 ? (
-							<Box w='container.md' margin='0 auto'>
-								<Heading mt='15' textAlign='center'>
-									En este momento no se encuentran ofertas academicas para este
-									pais
-								</Heading>
-							</Box>
-						) : (
-							element.cursos.map(element => {
-								return (
-									<CardCurso
-										key={element.id}
-										details={element.details}
-										title={element.title}
-									/>
-								);
-							})
-						)}
+						{element.cursos.map(element => (
+							<CardCurso
+								key={element.id}
+								details={element.details}
+								title={element.title}
+							/>
+						))}
 					</CardCursoDestino>
 				);
 			})}

@@ -8,13 +8,15 @@ const CardSlider = ({ imgUrl, imgAlt, headTitle, title }) => {
 			<Stack
 				borderRadius='lg'
 				boxShadow='md'
+				spacing='0'
 				w='275px'
 				minH='280px'
-				_hover={{ boxShadow: 'lg' }}
+				_hover={{ boxShadow: 'xl',transform:'scale(1.05)' }}
 			>
 				<Image
 					src={imgUrl}
 					alt={imgAlt}
+					minH='154px'
 					borderTopRadius='xl'
 					objectFit='cover'
 					objectPosition='center'

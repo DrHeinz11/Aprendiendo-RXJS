@@ -5,14 +5,15 @@ const CardCurso = ({ details, title }) => {
 	return (
 		<Stack
 			alignItems={'center'}
-			bg='#eef1f6'
+			bg='#f3f3f3'
 			py='10'
 			borderRadius='sm'
 			boxShadow='md'
-			gap='2'
+			gap='4'
+			justifyContent={'space-between'}
 		>
-			<Heading color='#7d35c0'>{title}</Heading>
-			<Box w='full'>
+			<Heading fontSize='3xl' color='primary.darkGranate'>{title}</Heading>
+			<Box w='full' textAlign='center'>
 				{details.map(elem => (
 					<Text fontSize='xl' key={elem.id}>
 						{elem.text} :{' '}

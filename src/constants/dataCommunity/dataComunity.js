@@ -7,7 +7,7 @@ export const dataComunity = [
 				imgUrl:
 					'https://www.yomeanimo.com/wp-content/uploads/2021/11/voluntariado-por-el-mundo.jpg',
 				imgAlt: 'voluntariado-por-el-mundo',
-				headTitle: 'tips de viaje',
+				headTitle: 'tips de viaje ✓',
 				title: '5 formas de hacer voluntariados y viajar por el mundo',
 				id: 1,
 			},
@@ -15,7 +15,7 @@ export const dataComunity = [
 				imgUrl:
 					'https://www.yomeanimo.com/wp-content/uploads/2013/02/trabajar-como-camarero.jpg',
 				imgAlt: 'camarero-por-el-mundo',
-				headTitle: 'tips de viaje',
+				headTitle: 'tips de viaje ✓',
 				title: 'Consejos para trabajar de camarero por el mundo',
 				id: 2,
 			},
@@ -37,7 +37,7 @@ export const dataComunity = [
 				imgUrl:
 					'https://www.yomeanimo.com/wp-content/uploads/2013/03/conocer-clima-ciudad-viaje.jpg',
 				imgAlt: 'conocer-clima-ciudad-viaje',
-				headTitle: 'tips de viaje',
+				headTitle: 'tips de viaje ✓',
 				title: 'Conocer el clima de una ciudad antes y durante un viaje!',
 				id: 2,
 			},
@@ -45,7 +45,7 @@ export const dataComunity = [
 				imgUrl:
 					'https://www.yomeanimo.com/wp-content/uploads/2021/11/en-que-pais-se-puede-ahorrar-mas-2.jpg',
 				imgAlt: 'en-que-pais-se-puede-ahorrar-mas',
-				headTitle: 'tips de viaje',
+				headTitle: 'tips de viaje ✓',
 				title:
 					'¿En qué país se puede ahorrar más con una visa Working Holiday?',
 				id: 1,
@@ -77,7 +77,7 @@ export const dataComunity = [
 				imgUrl:
 					'https://www.yomeanimo.com/wp-content/uploads/2013/05/como-sacar-la-licencia-de-conducir-internacional.jpg',
 				imgAlt: 'como-sacar-la-licencia-de-conducir-internacional',
-				headTitle: 'tips de viaje',
+				headTitle: 'tips de viaje ✓',
 				title: '¿Cómo sacar la licencia de conducir internacional?',
 				id: 2,
 			},
@@ -107,7 +107,7 @@ export const dataComunity = [
 				imgUrl:
 					'https://www.yomeanimo.com/wp-content/uploads/2013/10/ingles-ielts-toefl-rendir-examen-ingles.jpg',
 				imgAlt: 'ingles-ielts-toefl-rendir-examen-ingles',
-				headTitle: 'tips de viaje',
+				headTitle: 'tips de viaje ✓',
 				title:
 					'IELTS, TOEFL, FIRST: ¿Qué examen internacional de inglés me conviene rendir?',
 				id: 2,

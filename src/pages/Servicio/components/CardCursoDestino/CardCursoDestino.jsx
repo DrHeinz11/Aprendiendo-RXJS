@@ -21,7 +21,7 @@ const CardCursoDestino = ({ children, heading, imgUrl }) => {
 				gap='4'
 				gridTemplateColumns={{
 					base: 'repeat(auto-fit,minmax(250px,1fr))',
-					lg: 'repeat(auto-fit,minmax(400px,1fr))',
+					lg: 'repeat(auto-fill,minmax(350px,1fr))',
 				}}
 			>
 				<>{children}</>
