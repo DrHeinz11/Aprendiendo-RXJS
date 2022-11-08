@@ -12,7 +12,9 @@ const CardCurso = ({ details, title }) => {
 			gap='4'
 			justifyContent={'space-between'}
 		>
-			<Heading fontSize='3xl' color='primary.darkGranate'>{title}</Heading>
+			<Heading fontSize='3xl' color='primary.darkGranate'>
+				{title}
+			</Heading>
 			<Box w='full' textAlign='center'>
 				{details.map(elem => (
 					<Text fontSize='xl' key={elem.id}>

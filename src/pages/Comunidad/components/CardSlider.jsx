@@ -11,7 +11,7 @@ const CardSlider = ({ imgUrl, imgAlt, headTitle, title }) => {
 				spacing='0'
 				w='275px'
 				minH='280px'
-				_hover={{ boxShadow: 'xl',transform:'scale(1.05)' }}
+				_hover={{ boxShadow: 'xl', transform: 'scale(1.05)' }}
 			>
 				<Image
 					src={imgUrl}
@@ -30,7 +30,15 @@ const CardSlider = ({ imgUrl, imgAlt, headTitle, title }) => {
 					margin='0 !important'
 					flex='1'
 				>
-					<Text borderRadius='sm' bg='whiteAlpha.100' w='fit-content' px='2' textTransform='uppercase' fontWeight='light' fontSize='sm'>
+					<Text
+						borderRadius='sm'
+						bg='whiteAlpha.100'
+						w='fit-content'
+						px='2'
+						textTransform='uppercase'
+						fontWeight='light'
+						fontSize='sm'
+					>
 						{headTitle}
 					</Text>
 					<Heading

@@ -72,7 +72,6 @@ const Articulos = () => {
 							</Text>
 						))}
 					</Box>
-					
 				</HStack>
 			))}
 		</Box>

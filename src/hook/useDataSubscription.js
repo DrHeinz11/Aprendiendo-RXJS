@@ -10,7 +10,6 @@ const useDataSubscription = () => {
 
 	useEffect(() => {
 		subscription$.subscribe(data => {
-			console.log(data);
 			const setData = dataCardCountry.filter(
 				element => element.id === data.country.id
 			);

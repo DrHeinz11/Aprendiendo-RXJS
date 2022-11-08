@@ -2,7 +2,7 @@ import { Stack, Box, Heading } from '@chakra-ui/react';
 import { Link } from 'react-router-dom';
 import { dataCardCountry } from '../../../constants';
 import { CountryCard } from '../../../components';
-import CustomButtomRoute  from '../../../components/custom/CustomButtonRoute';
+import CustomButtomRoute from '../../../components/custom/CustomButtonRoute';
 
 const ExperienceSlider = () => {
 	return (

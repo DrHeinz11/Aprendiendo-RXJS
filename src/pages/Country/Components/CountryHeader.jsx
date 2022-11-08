@@ -2,7 +2,7 @@ import { Heading, HStack, Image, Stack } from '@chakra-ui/react';
 import React from 'react';
 import { CustomBox } from '../../../components';
 
-const CountryHeader = ({ title,background,flagImg }) => {
+const CountryHeader = ({ title, background, flagImg }) => {
 	return (
 		<Stack positon='column' justify='center' alignItems='center'>
 			<CustomBox
@@ -25,12 +25,12 @@ const CountryHeader = ({ title,background,flagImg }) => {
 				<Heading
 					lineHeight='1.15'
 					px='10'
-                    color='primary.darkGranate'
+					color='primary.darkGranate'
 					fontSize={{ base: '4xl', md: '5xl' }}
 				>
 					{title}
 				</Heading>
-				<Image boxSize='68px' src={flagImg.imgUrl} alt={flagImg.imgAlt}/>
+				<Image boxSize='68px' src={flagImg.imgUrl} alt={flagImg.imgAlt} />
 			</HStack>
 		</Stack>
 	);

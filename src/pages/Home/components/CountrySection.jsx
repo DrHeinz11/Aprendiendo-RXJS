@@ -1,6 +1,6 @@
 import { Stack, Heading } from '@chakra-ui/react';
-import {  Carrousel } from '../../../components/index';
-import   CustomButtomRoute from '../../../components/custom/CustomButtonRoute';
+import { Carrousel } from '../../../components/index';
+import CustomButtomRoute from '../../../components/custom/CustomButtonRoute';
 
 const CountrySection = () => {
 	return (

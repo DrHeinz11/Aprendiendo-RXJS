@@ -1,6 +1,6 @@
 import { Heading, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
-import  CustomBox  from '../../../components/custom/CustomBox';
+import CustomBox from '../../../components/custom/CustomBox';
 
 const ArticulosHeader = () => {
 	return (

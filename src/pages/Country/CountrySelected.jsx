@@ -8,7 +8,6 @@ import CountryHeading from './Components/CountryHeading';
 const CountrySelected = () => {
 	const { id } = useParams();
 	const DataFiltered = dataCardCountry.filter(element => element.title === id);
-	console.log(DataFiltered);
 	return (
 		<Box bg='#fafafa' minH='100vh' w='full'>
 			<CountryHeader
@@ -19,12 +18,12 @@ const CountrySelected = () => {
 					imgAlt: DataFiltered[0].title,
 				}}
 			/>
-			<Divider my='6'/>
+			<Divider my='6' />
 			<HStack gap={4} spacing='0' p='4' flexWrap='wrap' justify='center'>
 				{DataFiltered?.map(element => (
 					<>
 						<Image
-						w='full'
+							w='full'
 							maxW='550px'
 							objectFit='cover'
 							src={element.url}

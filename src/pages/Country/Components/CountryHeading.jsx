@@ -8,7 +8,7 @@ const CountryHeading = ({ info, subInfo }) => {
 			px='2'
 			gap='4'
 			textAlign={{ base: 'center', md: 'start' }}
-            maxW='550px'
+			maxW='550px'
 		>
 			<Heading
 				color='primary.darkGranate'
