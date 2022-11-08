@@ -1,14 +1,14 @@
-import { Heading, Stack, Text } from '@chakra-ui/react';
+import { Heading, HStack, Stack, Text } from '@chakra-ui/react';
 import React from 'react';
 
 const CountryHeading = ({ info, subInfo }) => {
 	return (
 		<Stack
+		flex='1 0 350px'
 			spacing='0'
 			px='2'
 			gap='4'
-			textAlign={{ base: 'center', md: 'start' }}
-			maxW='550px'
+			textAlign='start'
 		>
 			<Heading
 				color='primary.darkGranate'

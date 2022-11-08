@@ -16,8 +16,8 @@ const DescriptionCard = ({ subInfo, flagUrl, title, url, info }) => {
 			w='full'
 			bg='#efefef'
 			direction='row'
-			alignItems='center'
-			justifyContent='space-around'
+			alignItems='end'
+			justifyContent='center'
 			gap={5}
 			wrap='wrap'
 			p={{ base: 4, md: 10 }}

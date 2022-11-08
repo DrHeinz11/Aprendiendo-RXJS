@@ -16,7 +16,10 @@ const dataCardCountry = [
 			'https://www.yomeanimo.com/wp-content/uploads/2021/04/flag-new-zeland.svg',
 		title: 'New Zealand',
 		id: 'C-2',
-		info: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		info: 'La visa Working Holiday Nueva Zelanda tiene una vigencia de 12 meses. Es decir, pueden estar un año de corrido viviendo y trabajando en este país',
+		subInfo: `Antes que nada, tengan en cuenta que la visa Working Holiday Nueva Zelanda es difícil de conseguir, ya que los cupos son limitados y la demanda es muy alta
+	(	▪ Argentina – 1000 visas. Edad máxima: 35 años).
+		Por lo tanto, les sugerimos tener un país como plan B, que podría ser Dinamarca, Australia, Alemania, Francia o cualquiera de los destinos disponibles según el pasaporte que tengan. Además, recuerden que la edad máxima detallada es para el momento de aplicar a la visa (no para el momento de viajar).`,
 	},
 	{
 		url: 'https://www.yomeanimo.com/wp-content/uploads/2021/09/DestacadasGuias_Austria.jpg',
@@ -24,7 +27,13 @@ const dataCardCountry = [
 			'https://www.yomeanimo.com/wp-content/uploads/2021/04/flag-austria.svg',
 		title: 'Austria',
 		id: 'C-3',
-		info: "is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.",
+		info: `Esta vez vamos a estar hablando del nuevo acuerdo para la visa Working Holiday Austria!
+
+		En este artículo les vamos a contar cuáles son los requisitos para aplicar a la visa Working Holiday Austria.`,
+		subInfo: `Los cupos son limitados y se van a otorgar 200 visas. Deben obtener un turno en la Embajada de Austria en Buenos Aires y una vez que ya han recopilado toda la documentación necesaria, tienen que presentarla el día de su turno en la embajada.
+
+		Tengan en cuenta que a este trámite lo tienen que realizar ustedes en persona. Se deben presentar en el horario elegido en la Embajada de Austria, (Calle French 3671, Buenos Aires).
+		No se puede aplicar desde el exterior. La aplicación solo se puede realizar personalmente en la Embajada de Austria en Buenos Aires. Tampoco se puede enviar a otra persona con la documentación. Sí o sí deben ser ustedes los que apliquen.`,
 	},
 	{
 		url: 'https://www.yomeanimo.com/wp-content/uploads/2021/09/DestacadasGuias_Francia.jpg',

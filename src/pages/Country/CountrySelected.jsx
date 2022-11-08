@@ -19,9 +19,16 @@ const CountrySelected = () => {
 				}}
 			/>
 			<Divider my='6' />
-			<HStack gap={4} spacing='0' p='4' flexWrap='wrap' justify='center'>
+			<HStack
+				gap={4}
+				spacing='0'
+				p={{ base: 1, md: 4 }}
+				flexWrap='wrap'
+				justify='center'
+			>
 				{DataFiltered?.map(element => (
-					<>
+					<HStack key={element.id} spacing='0' gap='4' alignItems='start' flexWrap='wrap-reverse'>
+						<CountryHeading info={element.info} subInfo={element.subInfo} />
 						<Image
 							w='full'
 							maxW='550px'
@@ -29,8 +36,7 @@ const CountrySelected = () => {
 							src={element.url}
 							alt={element.title}
 						/>
-						<CountryHeading info={element.info} subInfo={element.subInfo} />
-					</>
+					</HStack>
 				))}
 			</HStack>
 		</Box>

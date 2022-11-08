@@ -14,6 +14,7 @@ const CountryHeader = ({ title, background, flagImg }) => {
 			/>
 			<HStack
 				maxWidth='1000px'
+				minW='350px'
 				margin='0 auto'
 				spacing={0}
 				px={{ base: 4, md: 10 }}
@@ -21,8 +22,10 @@ const CountryHeader = ({ title, background, flagImg }) => {
 				textAlign='center'
 				color='#fff'
 				flexWrap='wrap-reverse'
+				justifyContent='center'
 			>
 				<Heading
+				flex='0 0 300px'
 					lineHeight='1.15'
 					px='10'
 					color='primary.darkGranate'
