@@ -6,7 +6,7 @@ import { PaperAirplane } from '../../assets';
 const NotFound404 = () => {
 	return (
 		<Grid width='full' height='100vh' placeItems='center'>
-			<HStack flexWrap='wrap' w='full' p='10' gap='10'>
+			<HStack flexWrap='wrap' w='full' justifyContent='center' p='10' gap='10'>
 				<PaperAirplane />
 				<Stack gap='4' spacing='0' textAlign='center'>
 					<Heading color='primary.pinkChicle'>ERROR 404</Heading>
